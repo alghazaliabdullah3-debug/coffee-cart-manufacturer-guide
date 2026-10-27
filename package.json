@@ -4,7 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node scripts/build_offline.mjs"
+    "build": "node scripts/build_component_schedule.mjs && node scripts/build_offline.mjs",
+    "test": "node scripts/verify.mjs"
   },
   "description": "English metric-first Studio Roast 3D coffee cart manufacturer guide"
 }

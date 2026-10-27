@@ -1,0 +1,12 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {components} from '../docs/components.js';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..'),downloads=path.join(root,'docs/downloads');
+const quote=value=>'"'+String(value).replaceAll('"','""')+'"';
+const rows=[['Component ID','Component','Measurement','Value (mm unless stated)','Basis']];
+for(const p of components)for(const m of p.measurements)rows.push([p.id,p.name,m.label,m.value,m.status==='proposed'?'Proposed model reference; factory to confirm':m.status]);
+fs.writeFileSync(path.join(downloads,'component-dimensions.csv'),'\uFEFF'+rows.map(row=>row.map(quote).join(',')).join('\r\n'));
+const file=path.join(downloads,'cart-specification.json'),spec=JSON.parse(fs.readFileSync(file,'utf8'));spec.component_schedule=components.map(({id,name,measurements,note})=>({id,name,measurements,note}));spec.exploded_view={purpose:'Illustrative component inspection, not manufacturing assembly instructions',dimension_basis:'Nominal assembled dimensions in millimetres; exploded gaps are not fabrication dimensions',attached_features:{8:'worktop 16',9:'worktop 16; empty opening, no basin',15:'walnut fascia 23; engraving is not a separate applied part'}};fs.writeFileSync(file,JSON.stringify(spec,null,2));
+const briefFile=path.join(downloads,'manufacturer-brief-en.txt'),brief=fs.readFileSync(briefFile,'utf8').split('\n\nFULL COMPONENT SCHEDULE')[0];fs.writeFileSync(briefFile,brief+'\n\nFULL COMPONENT SCHEDULE\nP = proposed model reference, factory to confirm. All dimensions mm unless stated.\n\n'+components.map(p=>'#'+p.id+' '+p.name+'\n'+p.measurements.map(m=>'  '+m.label+': '+m.value+(m.status==='proposed'?' [P]':'')).join('\n')).join('\n\n'));
+console.log('Built 27-component CSV, structured specification and English brief.');

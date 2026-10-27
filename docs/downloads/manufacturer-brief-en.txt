@@ -47,3 +47,141 @@ Confirm caster size, brakes, total load, frame stability, transport conditions a
 Confirm LED logo scale, minimum stroke sizes, standoffs, driver, wiring and service access. Confirm engraving depth, fine-line detail, artwork position and finish on the walnut fascia.
 
 Design intent only. Final shop drawings and actual sink template must be confirmed before cutting.
+
+FULL COMPONENT SCHEDULE
+P = proposed model reference, factory to confirm. All dimensions mm unless stated.
+
+#1 Rectangular tool well by sink
+  Opening · X × Y: 100 × 230 mm [P]
+  Position · X / Y: 1210 / 270 mm [P]
+  Well depth / flange: To confirm [P]
+
+#2 Round tool well by sink
+  Opening diameter: Ø90 mm [P]
+  Centre · X / Y: 1260 / 155 mm [P]
+  Well depth / rim: To confirm [P]
+
+#6 Front-left knockbox opening
+  Opening · X × Y: 138 × 150 mm
+  Position · X / Y: 90 / 90 mm [P]
+  Box depth / flange: To confirm [P]
+
+#8 Rear service / parasol holes
+  Quantity / opening: 3 × Ø30 mm [P]
+  X centres: 660 / 1100 / 1540 mm [P]
+  Y centre / X spacing: 896.8 / 440 mm [P]
+
+#9 Sink opening · cutout only
+  Width · side-to-side X: 254 mm / 10 in
+  Length · front-to-back Y: 355.6 mm / 14 in
+  Position · X / Y: 1370 / 220 mm [P]
+  Bowl / depth: Not supplied · opening only
+
+#10 Three-sided stainless guard
+  Rise above worktop: 150 mm [P]
+  Guard path · L × D: 1828.8 × 1041.8 mm [P]
+  Rear corner / front setback: R40 / 25 mm [P]
+  Sheet gauge: To confirm [P]
+
+#11 U-shaped serving ledge
+  Outward usable projection: 304.8 mm / 12 in
+  Overall · L × D: 2438.4 × 1371.6 mm
+  Assembled top elevation: 1150 mm [P]
+  Sheet gauge / folded edge: To confirm [P]
+
+#12 Retained walnut rear rail
+  Rail section: 50 × 25 mm [P]
+  Overall length / rear extent: 1988.8 / 80 mm [P]
+  Short side returns: 250 mm [P]
+
+#13 Left walnut folding wing
+  Wood panel / deployed reach: 300 × 420 mm / 300 mm [P]
+  Current position: Folded vertically
+  Wood gauge / hinges: To confirm [P]
+
+#14 Studio Roast · white LED logo
+  Maximum artwork area: 900 W × 700 H mm [P]
+  Model artwork plane: 900 × 600 mm [P]
+  Centre above floor: 600 mm [P]
+  Mounts / driver / wiring: To confirm [P]
+
+#15 Logo engraved into walnut
+  Maximum engraving area: 210 W × 145 H mm [P]
+  Walnut fascia: 750 W × 175 H mm [P]
+  Engraving depth / fine lines: To confirm [P]
+
+#16 Main worktop
+  Plan · X × Y: 1828.8 × 1066.8 mm
+  Assembled top elevation: 1000 mm
+  Edge build-up in model: 25 mm · visual only [P]
+  Actual sheet gauge: To confirm [P]
+
+#17 Cabinet frame & equipment bay
+  Visual assembly · L × D × H: 1828.8 × 1066.8 × 875 mm [P]
+  Equipment bay clear width: 480 mm · model reference [P]
+  Members / welds / loads: To confirm [P]
+
+#18 Left storage door
+  Face · W × H: 260 × 635 mm [P]
+  Sheet / hinges / gaps: To confirm [P]
+
+#19 Right storage door
+  Face · W × H: 265 × 635 mm [P]
+  Sheet / hinges / gaps: To confirm [P]
+
+#20 Cup-column face & lower hatch
+  Main face · W × H: 195 × 635 mm [P]
+  Lower hatch · W × H: 165 × 225 mm [P]
+  Actual hardware / access: To confirm [P]
+
+#21 Sink-base upper service fascia
+  Face · W × H: 458.8 × 410 mm [P]
+  Fixings / service access: To confirm [P]
+
+#22 Sink-base lower door & pull
+  Door face · W × H: 458.8 × 405 mm [P]
+  Pull / hinges / sheet: To confirm [P]
+
+#23 Operator-facing walnut fascia
+  Panel face · W × H: 750 × 175 mm [P]
+  Visual panel build-up: 25 mm · confirm [P]
+  Wood / finish / fixing: To confirm [P]
+
+#24 Cup dispensers · pair
+  Quantity: 2 units
+  Visual outer / inner opening: Ø118 / Ø90 mm [P]
+  Vertical centre spacing: 165 mm [P]
+  Depth / selected fitting: To confirm [P]
+
+#25 Swivel casters · four
+  Quantity: 4 units
+  Visual wheel diameter: Ø70 mm [P]
+  Visual mounting height: 100 mm [P]
+  Brakes / rating / fixings: To confirm [P]
+
+#26 Customer-rear stainless panel
+  Face · W × H: 1828.8 × 845 mm [P]
+  Sheet gauge / returns: To confirm [P]
+
+#27 Left-end stainless panel
+  Face · D × H: 1028.8 × 845 mm [P]
+  Sheet gauge / returns: To confirm [P]
+
+#28 Right-end stainless panel
+  Face · D × H: 1028.8 × 845 mm [P]
+  Sheet gauge / returns: To confirm [P]
+
+#29 Serving-ledge supports · seven
+  Quantity: 7 illustrated supports [P]
+  Visual horizontal / vertical run: 279.8 / 105 mm [P]
+  Bracket design / load / section: To confirm [P]
+
+#30 Walnut-rail supports · three
+  Quantity: 3 illustrated supports [P]
+  Visual mounting-strip height: 105 mm [P]
+  Fastenings / support design: To confirm [P]
+
+#31 Folding-wing hinge & supports
+  Visual hinge span: 420 mm [P]
+  Visual support span: 250 mm [P]
+  Hinge / locks / fixing sizes: To confirm [P]

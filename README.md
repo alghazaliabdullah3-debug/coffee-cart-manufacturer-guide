@@ -49,3 +49,12 @@ This is a design-intent guide, **not final production CAD or certified shop draw
 The original reference offers 201/304 stainless steel and 1.2/2.0/3.0 mm gauge options; it does not select a grade or assign gauges to parts. Rendered edge thickness is a visual build-up, not a sheet-gauge instruction.
 
 No personal contact information or credentials are included.
+
+
+## Component inspection and explosion
+
+All 27 retained components and opening references have numbered labels, nominal assembled dimensions, projected dimension lines and a persistent measurement readout. Select a numbered label, chip or dropdown entry to orient and focus the part. Use **Explode cart**, the 0–100% separation slider and **Isolate selected** for inspection; **Reassemble cart** restores the exact original geometry.
+
+Exploded gaps are illustrative and never become fabrication dimensions. Sink opening 9 and rear holes 8 stay with worktop 16; engraving 15 remains on walnut fascia 23. The sink is never represented as a supplied basin. Unknown sheet gauges, depths, hardware and loads remain to be confirmed. New cabinet and hardware dimensions are proposed model references, not newly approved client specifications.
+
+`docs/components.js` is the shared catalogue for labels, measurement readouts, exploded offsets, dimension lines, CSV and structured downloads. `docs/inspection-ui.js` lays out the numbered labels and annotations. `scripts/build_component_schedule.mjs` refreshes the component CSV, JSON and English brief. Run `npm run build` to refresh the schedules and offline entry; `npm test` checks geometry, inspection and exact reassembly.

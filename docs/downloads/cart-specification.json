@@ -192,5 +192,610 @@
     "proposed_centre_height": 867.5,
     "engraving_depth": null,
     "status": "proposed; confirm engraving depth, fine-line detail and wood finish"
+  },
+  "component_schedule": [
+    {
+      "id": 1,
+      "name": "Rectangular tool well by sink",
+      "measurements": [
+        {
+          "label": "Opening · X × Y",
+          "value": "100 × 230 mm",
+          "status": "proposed"
+        },
+        {
+          "label": "Position · X / Y",
+          "value": "1210 / 270 mm",
+          "status": "proposed"
+        },
+        {
+          "label": "Well depth / flange",
+          "value": "To confirm",
+          "status": "proposed"
+        }
+      ],
+      "note": "Feature 1 moves beside the sink on its left. Opening 100 × 230 mm and position X=1210, Y=270 are proposed; match the selected tool well. The model represents the plan opening and rim; well depth must match the selected fitting."
+    },
+    {
+      "id": 2,
+      "name": "Round tool well by sink",
+      "measurements": [
+        {
+          "label": "Opening diameter",
+          "value": "Ø90 mm",
+          "status": "proposed"
+        },
+        {
+          "label": "Centre · X / Y",
+          "value": "1260 / 155 mm",
+          "status": "proposed"
+        },
+        {
+          "label": "Well depth / rim",
+          "value": "To confirm",
+          "status": "proposed"
+        }
+      ],
+      "note": "Feature 2 sits in front of 1, beside the sink. Diameter and centre X=1260, Y=155 are proposed. Plain round well; no cup-rinser nozzle. The model represents the plan opening and rim; well depth must match the selected fitting."
+    },
+    {
+      "id": 6,
+      "name": "Front-left knockbox opening",
+      "measurements": [
+        {
+          "label": "Opening · X × Y",
+          "value": "138 × 150 mm",
+          "status": "confirmed"
+        },
+        {
+          "label": "Position · X / Y",
+          "value": "90 / 90 mm",
+          "status": "proposed"
+        },
+        {
+          "label": "Box depth / flange",
+          "value": "To confirm",
+          "status": "proposed"
+        }
+      ],
+      "note": "At the operator-front-left corner. 138 mm along X; 150 mm along Y. Proposed position X=90, Y=90. Box depth, flange and removal method remain to be confirmed. Exploded geometry represents the opening trim and knock bar; box depth is unspecified."
+    },
+    {
+      "id": 8,
+      "name": "Rear service / parasol holes",
+      "measurements": [
+        {
+          "label": "Quantity / opening",
+          "value": "3 × Ø30 mm",
+          "status": "proposed"
+        },
+        {
+          "label": "X centres",
+          "value": "660 / 1100 / 1540 mm",
+          "status": "proposed"
+        },
+        {
+          "label": "Y centre / X spacing",
+          "value": "896.8 / 440 mm",
+          "status": "proposed"
+        }
+      ],
+      "note": "Three rear holes: centre X=660 / 1100 / 1540, Y=896.8. Ø30 is a visual proposal; confirm sizes, locations and use against selected hardware."
+    },
+    {
+      "id": 9,
+      "name": "Sink opening · cutout only",
+      "measurements": [
+        {
+          "label": "Width · side-to-side X",
+          "value": "254 mm / 10 in",
+          "status": "confirmed"
+        },
+        {
+          "label": "Length · front-to-back Y",
+          "value": "355.6 mm / 14 in",
+          "status": "confirmed"
+        },
+        {
+          "label": "Position · X / Y",
+          "value": "1370 / 220 mm",
+          "status": "proposed"
+        },
+        {
+          "label": "Bowl / depth",
+          "value": "Not supplied · opening only",
+          "status": "reference"
+        }
+      ],
+      "note": "10 in W side-to-side (X) × 14 in L front-to-back (Y). Owner supplies the sink; no basin is installed. Proposed position X=1370, Y=220. Confirm final cutout against the existing sink flange/template. No bowl depth is specified."
+    },
+    {
+      "id": 10,
+      "name": "Three-sided stainless guard",
+      "measurements": [
+        {
+          "label": "Rise above worktop",
+          "value": "150 mm",
+          "status": "proposed"
+        },
+        {
+          "label": "Guard path · L × D",
+          "value": "1828.8 × 1041.8 mm",
+          "status": "proposed"
+        },
+        {
+          "label": "Rear corner / front setback",
+          "value": "R40 / 25 mm",
+          "status": "proposed"
+        },
+        {
+          "label": "Sheet gauge",
+          "value": "To confirm",
+          "status": "proposed"
+        }
+      ],
+      "note": "Runs along the rear and full depth of both ends, stopping about 25 mm from the front. The 150 mm rise is proposed. The serving ledge sits at the guard top."
+    },
+    {
+      "id": 11,
+      "name": "U-shaped serving ledge",
+      "measurements": [
+        {
+          "label": "Outward usable projection",
+          "value": "304.8 mm / 12 in",
+          "status": "confirmed"
+        },
+        {
+          "label": "Overall · L × D",
+          "value": "2438.4 × 1371.6 mm",
+          "status": "calculated"
+        },
+        {
+          "label": "Assembled top elevation",
+          "value": "1150 mm",
+          "status": "proposed"
+        },
+        {
+          "label": "Sheet gauge / folded edge",
+          "value": "To confirm",
+          "status": "proposed"
+        }
+      ],
+      "note": "Projects 304.8 mm OUTWARD from the rear and both end guards. Operator edge remains open. Top elevation 1150 mm is proposed; edge build-up and supports require factory design."
+    },
+    {
+      "id": 12,
+      "name": "Retained walnut rear rail",
+      "measurements": [
+        {
+          "label": "Rail section",
+          "value": "50 × 25 mm",
+          "status": "proposed"
+        },
+        {
+          "label": "Overall length / rear extent",
+          "value": "1988.8 / 80 mm",
+          "status": "proposed"
+        },
+        {
+          "label": "Short side returns",
+          "value": "250 mm",
+          "status": "proposed"
+        }
+      ],
+      "note": "Retains the original walnut rear armrest below the stainless serving ledge. Section 50 × 25 mm, about 80 mm projection and short end returns are proposed."
+    },
+    {
+      "id": 13,
+      "name": "Left walnut folding wing",
+      "measurements": [
+        {
+          "label": "Wood panel / deployed reach",
+          "value": "300 × 420 mm / 300 mm",
+          "status": "proposed"
+        },
+        {
+          "label": "Current position",
+          "value": "Folded vertically",
+          "status": "reference"
+        },
+        {
+          "label": "Wood gauge / hinges",
+          "value": "To confirm",
+          "status": "proposed"
+        }
+      ],
+      "note": "Retains the original left folding wood wing, shown stowed beneath the new ledge. Proposed deployed projection 300 mm, depth 420 mm. Confirm hardware, deployed position and clearances."
+    },
+    {
+      "id": 14,
+      "name": "Studio Roast · white LED logo",
+      "measurements": [
+        {
+          "label": "Maximum artwork area",
+          "value": "900 W × 700 H mm",
+          "status": "proposed"
+        },
+        {
+          "label": "Model artwork plane",
+          "value": "900 × 600 mm",
+          "status": "proposed"
+        },
+        {
+          "label": "Centre above floor",
+          "value": "600 mm",
+          "status": "proposed"
+        },
+        {
+          "label": "Mounts / driver / wiring",
+          "value": "To confirm",
+          "status": "proposed"
+        }
+      ],
+      "note": "The updated SR monogram, coffee branch and STUDIO ROAST name appear in white LED light on the customer rear. Artwork is fitted proportionally within a proposed 900 W × 700 H mm area, centred at 600 mm above floor. Confirm final size, mounting, minimum stroke sizes, driver and concealed wiring with the factory."
+    },
+    {
+      "id": 15,
+      "name": "Logo engraved into walnut",
+      "measurements": [
+        {
+          "label": "Maximum engraving area",
+          "value": "210 W × 145 H mm",
+          "status": "proposed"
+        },
+        {
+          "label": "Walnut fascia",
+          "value": "750 W × 175 H mm",
+          "status": "proposed"
+        },
+        {
+          "label": "Engraving depth / fine lines",
+          "value": "To confirm",
+          "status": "proposed"
+        }
+      ],
+      "note": "Engrave the same updated SR / coffee-branch / STUDIO ROAST artwork directly into the operator-facing walnut fascia. Keep the existing wood panel. Proposed artwork fits proportionally within 210 W × 145 H mm, centred on the 750 × 175 mm fascia. Factory to confirm scale, engraving depth, fine-line legibility and clear finish."
+    },
+    {
+      "id": 16,
+      "name": "Main worktop",
+      "measurements": [
+        {
+          "label": "Plan · X × Y",
+          "value": "1828.8 × 1066.8 mm",
+          "status": "confirmed"
+        },
+        {
+          "label": "Assembled top elevation",
+          "value": "1000 mm",
+          "status": "reference"
+        },
+        {
+          "label": "Edge build-up in model",
+          "value": "25 mm · visual only",
+          "status": "proposed"
+        },
+        {
+          "label": "Actual sheet gauge",
+          "value": "To confirm",
+          "status": "proposed"
+        }
+      ],
+      "note": "The sink cutout and rear holes remain in this worktop during explosion. The rendered 25 mm edge build-up is not a specified sheet gauge."
+    },
+    {
+      "id": 17,
+      "name": "Cabinet frame & equipment bay",
+      "measurements": [
+        {
+          "label": "Visual assembly · L × D × H",
+          "value": "1828.8 × 1066.8 × 875 mm",
+          "status": "proposed"
+        },
+        {
+          "label": "Equipment bay clear width",
+          "value": "480 mm · model reference",
+          "status": "proposed"
+        },
+        {
+          "label": "Members / welds / loads",
+          "value": "To confirm",
+          "status": "proposed"
+        }
+      ],
+      "note": "Frame, dividers and equipment-bay base are one structural subassembly in the inspection model. Section sizes, welds, clearances and load design require factory shop drawings."
+    },
+    {
+      "id": 18,
+      "name": "Left storage door",
+      "measurements": [
+        {
+          "label": "Face · W × H",
+          "value": "260 × 635 mm",
+          "status": "proposed"
+        },
+        {
+          "label": "Sheet / hinges / gaps",
+          "value": "To confirm",
+          "status": "proposed"
+        }
+      ],
+      "note": "Dimensions describe the proposed visible door face, not its blank, hem, hinge or sheet gauge."
+    },
+    {
+      "id": 19,
+      "name": "Right storage door",
+      "measurements": [
+        {
+          "label": "Face · W × H",
+          "value": "265 × 635 mm",
+          "status": "proposed"
+        },
+        {
+          "label": "Sheet / hinges / gaps",
+          "value": "To confirm",
+          "status": "proposed"
+        }
+      ],
+      "note": "Second door of the left storage cabinet. Confirm fabrication gaps and hardware with the manufacturer."
+    },
+    {
+      "id": 20,
+      "name": "Cup-column face & lower hatch",
+      "measurements": [
+        {
+          "label": "Main face · W × H",
+          "value": "195 × 635 mm",
+          "status": "proposed"
+        },
+        {
+          "label": "Lower hatch · W × H",
+          "value": "165 × 225 mm",
+          "status": "proposed"
+        },
+        {
+          "label": "Actual hardware / access",
+          "value": "To confirm",
+          "status": "proposed"
+        }
+      ],
+      "note": "Face and lower service hatch are shown as a subassembly. Cup dispenser units are component 24."
+    },
+    {
+      "id": 21,
+      "name": "Sink-base upper service fascia",
+      "measurements": [
+        {
+          "label": "Face · W × H",
+          "value": "458.8 × 410 mm",
+          "status": "proposed"
+        },
+        {
+          "label": "Fixings / service access",
+          "value": "To confirm",
+          "status": "proposed"
+        }
+      ],
+      "note": "Upper fixed/service fascia of the proposed right sink base. No basin is included."
+    },
+    {
+      "id": 22,
+      "name": "Sink-base lower door & pull",
+      "measurements": [
+        {
+          "label": "Door face · W × H",
+          "value": "458.8 × 405 mm",
+          "status": "proposed"
+        },
+        {
+          "label": "Pull / hinges / sheet",
+          "value": "To confirm",
+          "status": "proposed"
+        }
+      ],
+      "note": "Lower sink-base door with its illustrated pull. Confirm clearances against the owner-supplied sink and plumbing."
+    },
+    {
+      "id": 23,
+      "name": "Operator-facing walnut fascia",
+      "measurements": [
+        {
+          "label": "Panel face · W × H",
+          "value": "750 × 175 mm",
+          "status": "proposed"
+        },
+        {
+          "label": "Visual panel build-up",
+          "value": "25 mm · confirm",
+          "status": "proposed"
+        },
+        {
+          "label": "Wood / finish / fixing",
+          "value": "To confirm",
+          "status": "proposed"
+        }
+      ],
+      "note": "Existing walnut panel is retained. Engraving 15 stays attached to this wood during explosion; it is not a separate applied badge."
+    },
+    {
+      "id": 24,
+      "name": "Cup dispensers · pair",
+      "measurements": [
+        {
+          "label": "Quantity",
+          "value": "2 units",
+          "status": "reference"
+        },
+        {
+          "label": "Visual outer / inner opening",
+          "value": "Ø118 / Ø90 mm",
+          "status": "proposed"
+        },
+        {
+          "label": "Vertical centre spacing",
+          "value": "165 mm",
+          "status": "proposed"
+        },
+        {
+          "label": "Depth / selected fitting",
+          "value": "To confirm",
+          "status": "proposed"
+        }
+      ],
+      "note": "Illustrated sizes only; select actual dispenser units and confirm the mounting cutouts and depth."
+    },
+    {
+      "id": 25,
+      "name": "Swivel casters · four",
+      "measurements": [
+        {
+          "label": "Quantity",
+          "value": "4 units",
+          "status": "reference"
+        },
+        {
+          "label": "Visual wheel diameter",
+          "value": "Ø70 mm",
+          "status": "proposed"
+        },
+        {
+          "label": "Visual mounting height",
+          "value": "100 mm",
+          "status": "proposed"
+        },
+        {
+          "label": "Brakes / rating / fixings",
+          "value": "To confirm",
+          "status": "proposed"
+        }
+      ],
+      "note": "One representative caster is used for close inspection; all four remain in the exploded assembly. Wheel and mounting sizes are visual proposals, not selected hardware."
+    },
+    {
+      "id": 26,
+      "name": "Customer-rear stainless panel",
+      "measurements": [
+        {
+          "label": "Face · W × H",
+          "value": "1828.8 × 845 mm",
+          "status": "proposed"
+        },
+        {
+          "label": "Sheet gauge / returns",
+          "value": "To confirm",
+          "status": "proposed"
+        }
+      ],
+      "note": "Solid rear skin. LED sign 14 is independently separated in exploded mode; actual mount penetrations and driver access remain to be designed."
+    },
+    {
+      "id": 27,
+      "name": "Left-end stainless panel",
+      "measurements": [
+        {
+          "label": "Face · D × H",
+          "value": "1028.8 × 845 mm",
+          "status": "proposed"
+        },
+        {
+          "label": "Sheet gauge / returns",
+          "value": "To confirm",
+          "status": "proposed"
+        }
+      ],
+      "note": "Visible left-end skin. The left folding wing and its hardware are components 13 and 31."
+    },
+    {
+      "id": 28,
+      "name": "Right-end stainless panel",
+      "measurements": [
+        {
+          "label": "Face · D × H",
+          "value": "1028.8 × 845 mm",
+          "status": "proposed"
+        },
+        {
+          "label": "Sheet gauge / returns",
+          "value": "To confirm",
+          "status": "proposed"
+        }
+      ],
+      "note": "Visible right-end skin. Dimensions describe the model face, not final fabrication blanks."
+    },
+    {
+      "id": 29,
+      "name": "Serving-ledge supports · seven",
+      "measurements": [
+        {
+          "label": "Quantity",
+          "value": "7 illustrated supports",
+          "status": "proposed"
+        },
+        {
+          "label": "Visual horizontal / vertical run",
+          "value": "279.8 / 105 mm",
+          "status": "proposed"
+        },
+        {
+          "label": "Bracket design / load / section",
+          "value": "To confirm",
+          "status": "proposed"
+        }
+      ],
+      "note": "Illustrative brace layout only. Inspect one representative rear brace here. Actual brackets, sections, welds, clearances and load capacity require factory design."
+    },
+    {
+      "id": 30,
+      "name": "Walnut-rail supports · three",
+      "measurements": [
+        {
+          "label": "Quantity",
+          "value": "3 illustrated supports",
+          "status": "proposed"
+        },
+        {
+          "label": "Visual mounting-strip height",
+          "value": "105 mm",
+          "status": "proposed"
+        },
+        {
+          "label": "Fastenings / support design",
+          "value": "To confirm",
+          "status": "proposed"
+        }
+      ],
+      "note": "Representative rail support. Hardware dimensions are not finalized."
+    },
+    {
+      "id": 31,
+      "name": "Folding-wing hinge & supports",
+      "measurements": [
+        {
+          "label": "Visual hinge span",
+          "value": "420 mm",
+          "status": "proposed"
+        },
+        {
+          "label": "Visual support span",
+          "value": "250 mm",
+          "status": "proposed"
+        },
+        {
+          "label": "Hinge / locks / fixing sizes",
+          "value": "To confirm",
+          "status": "proposed"
+        }
+      ],
+      "note": "Illustrated hinge and two support members only. Confirm actual folding action, lock, mounting and clearance under the serving ledge."
+    }
+  ],
+  "exploded_view": {
+    "purpose": "Illustrative component inspection, not manufacturing assembly instructions",
+    "dimension_basis": "Nominal assembled dimensions in millimetres; exploded gaps are not fabrication dimensions",
+    "attached_features": {
+      "8": "worktop 16",
+      "9": "worktop 16; empty opening, no basin",
+      "15": "walnut fascia 23; engraving is not a separate applied part"
+    }
   }
 }
