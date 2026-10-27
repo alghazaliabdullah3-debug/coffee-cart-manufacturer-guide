@@ -1,0 +1,196 @@
+{
+  "project": "Studio Roast custom coffee cart",
+  "revision": "D — English, corrected sink orientation, updated SR logo on rear LED and operator walnut engraving",
+  "document_purpose": "Design intent for manufacturer review; not fabrication-ready shop drawings",
+  "units": "mm",
+  "axes": {
+    "origin": "Operator-front-left corner of main body",
+    "x": "right along cart length",
+    "y": "rearward along body depth",
+    "z": "height from floor"
+  },
+  "body": {
+    "length": 1828.8,
+    "depth": 1066.8,
+    "plan_status": "client specified",
+    "worktop_height_including_casters": 1000,
+    "height_status": "retained reference"
+  },
+  "serving_ledge": {
+    "sides": [
+      "rear",
+      "left",
+      "right"
+    ],
+    "operator_front": "open, no fourth ledge",
+    "projection_outward": 304.8,
+    "projection_status": "client specified",
+    "top_height": 1150,
+    "height_status": "proposed",
+    "edge_build_up": "visual representation; sheet gauge not selected",
+    "overall_length": 2438.4,
+    "overall_depth": 1371.6,
+    "envelope_status": "calculated"
+  },
+  "guard": {
+    "sides": [
+      "rear",
+      "full left end",
+      "full right end"
+    ],
+    "height_above_worktop": 150,
+    "height_status": "proposed",
+    "front_setback": 25,
+    "rear_inner_radius": 40,
+    "setback_and_radius_status": "proposed"
+  },
+  "openings": [
+    {
+      "id": 6,
+      "name_en": "Knockbox opening",
+      "length_x": 138,
+      "depth_y": 150,
+      "size_status": "client specified",
+      "location_reference": "front-left corner",
+      "x": 90,
+      "y": 90,
+      "position_status": "proposed",
+      "box_depth": null
+    },
+    {
+      "id": 1,
+      "name_en": "Rectangular tool well",
+      "length_x": 100,
+      "depth_y": 230,
+      "x": 1210,
+      "y": 270,
+      "size_and_position_status": "proposed"
+    },
+    {
+      "id": 2,
+      "name_en": "Round tool well",
+      "diameter": 90,
+      "centre_x": 1260,
+      "centre_y": 155,
+      "size_and_position_status": "proposed",
+      "cup_rinser_nozzle": false
+    },
+    {
+      "id": 8,
+      "name_en": "Rear service or parasol holes",
+      "diameter": 30,
+      "centre_x": [
+        660,
+        1100,
+        1540
+      ],
+      "centre_y": 896.8,
+      "size_and_position_status": "proposed, verify chosen fittings"
+    },
+    {
+      "id": 9,
+      "name_en": "Sink opening only",
+      "size_status": "client specified, verify existing sink template before cutting",
+      "x": 1370,
+      "y": 220,
+      "position_status": "proposed",
+      "sink_installed_in_model": false,
+      "sink_source": "owner supplied",
+      "bowl_depth": null,
+      "faucet_included": false,
+      "drain_included": false,
+      "width_x": 254,
+      "length_y": 355.6,
+      "orientation": "10 in W side-to-side (X) × 14 in L front-to-back (Y)"
+    }
+  ],
+  "rectangle_coordinate_reference": "front-left corner of opening",
+  "removed_feature_ids": [
+    3,
+    4,
+    5,
+    7
+  ],
+  "cabinet_modules_left_to_right": {
+    "widths": [
+      580,
+      220,
+      520,
+      508.8
+    ],
+    "uses": [
+      "storage",
+      "cup dispensers",
+      "open equipment bay",
+      "sink base"
+    ],
+    "status": "proposed"
+  },
+  "walnut_rear_rail": {
+    "retained": true,
+    "section": [
+      50,
+      25
+    ],
+    "outer_projection": 80,
+    "side_return_length": 250,
+    "dimension_status": "proposed"
+  },
+  "walnut_left_folding_wing": {
+    "retained": true,
+    "model_state": "stowed",
+    "deployed_projection": 300,
+    "depth": 420,
+    "dimension_status": "proposed"
+  },
+  "materials": {
+    "stainless_grade_options_from_reference": [
+      "201",
+      "304"
+    ],
+    "selected_grade": null,
+    "sheet_gauge_options_from_reference_mm": [
+      1.2,
+      2,
+      3
+    ],
+    "part_gauges": null
+  },
+  "factory_to_confirm": [
+    "Final shop drawings",
+    "Material grade and part sheet gauges",
+    "All proposed dimensions and positions",
+    "Actual sink and knockbox templates, corner radii and flanges",
+    "Welds, edge returns and ledge supports",
+    "Serving loads, total load, stability and caster ratings",
+    "Hardware and folding-wing clearances",
+    "Plumbing, seals, tolerances, finish and transport"
+  ],
+  "rear_led_sign": {
+    "artwork": "Updated owner-supplied SR monogram, coffee branch and STUDIO ROAST name",
+    "colour": "white illuminated LED",
+    "surface": "customer rear",
+    "proposed_max_artwork_area": {
+      "width": 900,
+      "height": 700
+    },
+    "proposed_centre_height": 600,
+    "dimensions_status": "proposed; fit artwork proportionally; confirm mounting, stroke sizes, driver and concealed wiring"
+  },
+  "operator_walnut_engraving": {
+    "artwork": "Same updated owner-supplied logo",
+    "surface": "existing operator-facing walnut fascia",
+    "fascia_visual_size": {
+      "width": 750,
+      "height": 175
+    },
+    "proposed_max_artwork_area": {
+      "width": 210,
+      "height": 145
+    },
+    "proposed_centre_x": 405,
+    "proposed_centre_height": 867.5,
+    "engraving_depth": null,
+    "status": "proposed; confirm engraving depth, fine-line detail and wood finish"
+  }
+}

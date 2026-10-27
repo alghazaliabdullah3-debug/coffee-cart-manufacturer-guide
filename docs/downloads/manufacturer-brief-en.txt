@@ -1,0 +1,49 @@
+STUDIO ROAST / COFFEE CART / REVISION D
+ENGLISH MANUFACTURER BRIEF
+All dimensions in mm unless stated. L × D × H = length × depth × height.
+Origin: operator-front-left of main body. X right, Y rearward, Z above floor.
+
+DIMENSIONS
+Main body · L × D: 1828.8 × 1066.8 mm. CONFIRMED. 6 ft × 3.5 ft
+Floor to worktop (including casters): 1000 mm. REFERENCE. Retained from original reference
+Ledge projection · rear + both ends: 304.8 mm. CONFIRMED. 12 in, outward
+Overall envelope · L × D: 2438.4 × 1371.6 mm. CALCULATED. Body L + 2 × projection; body D + projection
+Guard rise above worktop: 150 mm. PROPOSED. Final height not yet specified
+Floor to serving ledge top: 1150 mm. PROPOSED. 1000 + 150
+9 Sink opening · W(X) × L(Y): 254 × 355.6 mm. CONFIRMED. 10 in side-to-side × 14 in front-to-back; verify supplied sink template
+6 Knockbox opening · L × D: 138 × 150 mm. CONFIRMED. Box depth to confirm
+Cabinet modules · operator left to right: 580 / 220 / 520 / 508.8 mm. PROPOSED. Storage / cups / equipment bay / sink base
+Rear guard inner corner radius: R40 mm. PROPOSED. Corresponding outer ledge edge ≈ R344.8
+Rear LED logo · maximum artwork area: 900 W × 700 H mm. PROPOSED. Proportional artwork; proposed centre 600 mm above floor
+Operator walnut engraving · maximum artwork area: 210 W × 145 H mm. PROPOSED. Centred on existing 750 × 175 mm walnut fascia
+
+COUNTERTOP OPENINGS
+9 / Sink opening · cutout only: 254 × 355.6 mm. 10 in W side-to-side (X) × 14 in L front-to-back (Y). Owner supplies the sink; no basin is installed. Proposed position X=1370, Y=220. Confirm final cutout against the existing sink flange/template. No bowl depth is specified.
+6 / Front-left knockbox opening: 138 × 150 mm. At the operator-front-left corner. 138 mm along X; 150 mm along Y. Proposed position X=90, Y=90. Box depth, flange and removal method remain to be confirmed.
+1 / Rectangular tool well by sink: 100 × 230 mm. Feature 1 moves beside the sink on its left. Opening 100 × 230 mm and position X=1210, Y=270 are proposed; match the selected tool well.
+2 / Round tool well by sink: Ø90 mm. Feature 2 sits in front of 1, beside the sink. Diameter and centre X=1260, Y=155 are proposed. Plain round well; no cup-rinser nozzle.
+8 / Rear service / parasol holes: 3 × Ø30 mm. Three rear holes: centre X=660 / 1100 / 1540, Y=896.8. Ø30 is a visual proposal; confirm sizes, locations and use against selected hardware.
+
+BRANDING
+The updated SR monogram, coffee branch and STUDIO ROAST name appear in white LED light on the customer rear. Artwork is fitted proportionally within a proposed 900 W × 700 H mm area, centred at 600 mm above floor. Confirm final size, mounting, minimum stroke sizes, driver and concealed wiring with the factory.
+Engrave the same updated SR / coffee-branch / STUDIO ROAST artwork directly into the operator-facing walnut fascia. Keep the existing wood panel. Proposed artwork fits proportionally within 210 W × 145 H mm, centred on the 750 × 175 mm fascia. Factory to confirm scale, engraving depth, fine-line legibility and clear finish.
+
+DESIGN INTENT
+Keep the stainless cabinet, left walnut fascia, two round cup dispensers, central open equipment bay and four casters.
+Run the 304.8 mm outward serving ledge along the rear and both ends. Leave the operator side open in every view.
+Features 3, 4, 5 and 7 are removed. Keep the left and central worktop clear.
+Put knockbox 6 at the front-left. Move tool wells 1 and 2 beside the far-right sink opening.
+Feature 9 is a cutout for the owner’s existing sink. No added rinser nozzle, basin, faucet or drain.
+Retain the walnut rear armrest and left folding wing. The model shows the wing stowed.
+Use the updated SR monogram with coffee branch and STUDIO ROAST name: white LED on the customer rear and engraved directly into the operator-facing walnut fascia.
+
+FACTORY REVIEW
+Material: the source offers 201 / 304 stainless steel; the final grade has not been selected. Quote and confirm.
+Sheet gauges: source options are 1.2 / 2.0 / 3.0 mm, unassigned to parts. Model edge build-up does not specify sheet gauge.
+Confirm the proposed 150 mm guard height, ledge elevation, corner radii, edge returns, welds and brackets; verify serving loads.
+Verify final cutouts, corner radii, flanges, seals, removal space and plumbing against the actual sink and knockbox.
+Check cabinet modules, hinges, cup dispensers, equipment clearance and the folding wing against the new ledge.
+Confirm caster size, brakes, total load, frame stability, transport conditions and manufacturing tolerances. Submit final shop drawings for owner approval.
+Confirm LED logo scale, minimum stroke sizes, standoffs, driver, wiring and service access. Confirm engraving depth, fine-line detail, artwork position and finish on the walnut fascia.
+
+Design intent only. Final shop drawings and actual sink template must be confirmed before cutting.

@@ -1,0 +1,10 @@
+{
+  "name": "coffee-cart-manufacturer-guide",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build_offline.mjs"
+  },
+  "description": "English metric-first Studio Roast 3D coffee cart manufacturer guide"
+}

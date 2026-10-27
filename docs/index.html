@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#163f3c">
+  <meta name="description" content="Studio Roast coffee cart manufacturer guide. Interactive 3D, metric dimensions, top plan and English fabrication notes.">
+  <title>Studio Roast · Coffee Cart | Revision D</title>
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+<a class="skip" href="#explore">Skip to the 3D model</a>
+<header class="site-header">
+  <a class="brand" href="#"><span class="brand-icon studio-icon">SR</span><span>STUDIO ROAST<small data-i18n="brandSub">MANUFACTURER GUIDE · REV D</small></span></a>
+  <nav aria-label="Main navigation"><a href="#explore" data-i18n="navExplore">3D explorer</a><a href="#plan" data-i18n="navPlan">Dimensions</a><a href="#build" data-i18n="navBuild">Builder notes</a><a href="#documents" data-i18n="navDocs">Documents</a></nav>
+  
+</header>
+<main>
+  <section class="intro">
+    <div><p class="eyebrow"><span class="live-dot"></span><span data-i18n="introEyebrow">STUDIO ROAST / COFFEE CART / REVISION D</span></p><h1 data-i18n="title">Your cart.<br> From every angle.</h1><p class="intro-copy" data-i18n="introCopy">Explore the form, inspect the dimensions, and hand your manufacturer one clear English-language design.</p></div>
+    <div class="intro-aside"><span class="rev-stamp">D<small>REVISION</small></span><p data-i18n="units">PRIMARY UNITS: mm<br>Length × Depth × Height</p><span class="status-pill" data-i18n="designStage">Design intent · Factory review</span></div>
+  </section>
+
+  <section id="explore" class="explorer" aria-labelledby="explorer-title">
+    <div class="explorer-top"><h2 id="explorer-title"><span class="section-index">01</span><span data-i18n="exploreTitle">Explore the cart</span></h2><span class="unit-tag">mm</span></div>
+    <div class="explorer-grid">
+      <div class="model-column">
+        <div class="viewbar" role="group" aria-label="3D views">
+          <button data-view="iso" class="active" data-i18n="viewIso" type="button">Perspective</button><button data-view="front" data-i18n="viewFront" type="button">Operator</button><button data-view="rear" data-i18n="viewRear" type="button">Customer rear</button><button data-view="left" data-i18n="viewLeft" type="button">Left end</button><button data-view="right" data-i18n="viewRight" type="button">Right end</button><button data-view="top" data-i18n="viewTop" type="button">Top</button>
+        </div>
+        <div class="stage" id="stage">
+          <span class="stage-label">REV D <span>·</span> <span data-i18n="oneModel">ONE SHARED MODEL</span></span>
+          <canvas id="cart" tabindex="0" role="img" aria-label="Interactive coffee cart. Use view buttons or arrow keys to rotate, plus and minus to zoom."></canvas>
+          <svg id="annotations" aria-hidden="true"></svg>
+          <div id="hotspots" aria-label="Select a feature"></div>
+          <div id="webgl-fallback" hidden><p data-i18n="fallback">3D is unavailable on this device. Use the top plan and the complete drawings below.</p><img src="assets/studio-roast-model-views-rev-d.png" alt="Revision D corrected cart views"></div>
+          <div class="stage-bottom"><span data-i18n="gesture">Drag to rotate · Scroll to zoom</span><div class="zoom-controls"><button id="zoom-out" type="button" aria-label="Zoom out">−</button><button id="fit" type="button" data-i18n="fit">Fit view</button><button id="zoom-in" type="button" aria-label="Zoom in">+</button></div></div>
+        </div>
+        <div class="model-tools"><label class="toggle"><input type="checkbox" id="dimensions" checked><span data-i18n="showDims">Dimensions</span></label><label class="toggle"><input type="checkbox" id="hide-ledge"><span data-i18n="hideLedge">Hide guard & ledge</span></label><button type="button" id="spin" aria-pressed="false"><span class="spin-icon">↻</span><span data-i18n="spin">Auto rotate</span></button><button type="button" id="save-view" data-i18n="saveView">Save view ↓</button></div>
+        <div class="model-footnote"><span class="swatch"></span><span data-i18n="ledgeRule">U-shaped ledge: rear + both ends, operator side open. Green indicates selection only.</span></div>
+      </div>
+      <aside class="detail-panel">
+        <div class="panel-heading"><span data-i18n="inspect">INSPECT A COMPONENT</span><span class="small muted">REV D</span></div>
+        <div class="part-tabs" id="part-tabs" role="group" aria-label="Cart components"></div>
+        <div id="part-detail" aria-live="polite"></div>
+        <button id="part-top" class="text-link" type="button" data-i18n="inspectTop">Inspect in top plan ↗</button>
+        <div class="orientation"><span class="orientation-mark">↙</span><p data-i18n="orientation">FRONT is the barista / operator side.<br>REAR is the customer serving side.</p></div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="key-dimensions" aria-label="Principal dimensions">
+    <article><p data-i18n="bodySize">BODY · LENGTH × DEPTH</p><strong>1828.8 <span>×</span> 1066.8<small> mm</small></strong><span data-i18n="bodySizeSub">Client specified · 6 ft × 3.5 ft</span></article>
+    <article><p data-i18n="projection">OUTWARD LEDGE PROJECTION</p><strong>304.8<small> mm</small></strong><span data-i18n="projectionSub">Client specified · Three sides · 12 in</span></article>
+    <article><p data-i18n="envelope">OVERALL ENVELOPE · LENGTH × DEPTH</p><strong>2438.4 <span>×</span> 1371.6<small> mm</small></strong><span data-i18n="envelopeSub">Calculated from body + outward ledge</span></article>
+  </section>
+
+  <section id="plan" class="plan-section section-spacing">
+    <div class="section-heading"><div><p class="eyebrow" data-i18n="planEyebrow">MEASURE / CUTOUT LAYOUT</p><h2><span class="section-index">02</span><span data-i18n="planTitle">A place for every detail.</span></h2></div><a class="button outline" href="downloads/studio-roast-blueprint-rev-d.pdf" target="_blank" rel="noopener" data-i18n="blueprintBtn">Open blueprint ↗</a></div>
+    <div class="plan-grid"><div class="plan-card"><div class="plan-caption"><strong data-i18n="topPlan">TOP PLAN</strong><span data-i18n="originNote">Origin O: operator-front-left body corner</span></div><div id="top-plan"></div><p class="plan-note" data-i18n="planNote">Select a numbered feature. Positions are proposed; verify against actual fittings and the sink template.</p></div><div class="cutout-schedule"><h3 data-i18n="schedule">Countertop opening schedule</h3><p class="muted small" data-i18n="coordinateNote">X runs right; Y runs rearward. Rectangles use their front-left corner; round holes use their centre. Coordinates in mm.</p><div id="cutout-list"></div><div class="alert"><strong data-i18n="sinkAlertTitle">9 is an empty sink opening only</strong><p data-i18n="sinkAlert">254 mm side-to-side (X) × 355.6 mm front-to-back (Y). This is a 10 in W × 14 in L opening for the owner-supplied sink. No basin is included. Verify the actual installation template before cutting.</p></div></div></div>
+    <div class="table-wrap"><table id="dimension-table"><caption data-i18n="dimSchedule">Dimension schedule · All dimensions in mm unless noted</caption><thead><tr><th data-i18n="item">Item</th><th data-i18n="dimension">Dimension</th><th data-i18n="status">Status / basis</th></tr></thead><tbody></tbody></table></div>
+  </section>
+
+  <section id="build" class="build-section section-spacing">
+    <div class="section-heading"><div><p class="eyebrow" data-i18n="buildEyebrow">FABRICATION / DESIGN HANDOFF</p><h2><span class="section-index">03</span><span data-i18n="buildTitle">Built from a clear brief.</span></h2></div><button class="button outline" type="button" id="print" data-i18n="print">Print builder brief ↗</button></div>
+    <div class="build-grid"><article class="build-card"><span class="card-code">A / DESIGN INTENT</span><h3 data-i18n="intentTitle">Design details to preserve</h3><ul id="intent-list"></ul></article><article class="build-card"><span class="card-code">B / FACTORY REVIEW</span><h3 data-i18n="reviewTitle">Confirm before fabrication</h3><ul id="review-list"></ul></article></div>
+    <div class="review-banner"><span>↗</span><p data-i18n="reviewBanner">This guide communicates design intent. Green labels identify client or reference dimensions; amber labels identify proposals. Before cutting, the manufacturer must provide final shop drawings confirming sheet gauges, supports, installation tolerances and load capacity.</p></div>
+  </section>
+
+  <section id="documents" class="section-spacing documents-section">
+    <div class="section-heading"><div><p class="eyebrow" data-i18n="docsEyebrow">ONE REVISION / COMPLETE REFERENCE</p><h2><span class="section-index">04</span><span data-i18n="docsTitle">Take the complete design.</span></h2></div><span class="small muted" data-i18n="docsRevision">Revision D · Sink orientation + rear LED sign</span></div>
+    <div class="documents-grid"><a class="document" href="downloads/studio-roast-manufacturer-guide-rev-d.pdf" target="_blank" rel="noopener"><div class="document-preview board"><img src="assets/studio-roast-model-views-rev-d.png" loading="lazy" alt="Corrected Revision D finished multi-angle views"></div><div class="document-meta"><span>PDF · 4 <span data-i18n="pages">pages</span> · CURRENT</span><h3 data-i18n="fullPackage">Complete design package</h3><p data-i18n="fullPackageSub">Current blueprints, details & shared-model views</p><span class="document-arrow">↗</span></div></a><a class="document" href="downloads/studio-roast-blueprint-rev-d.pdf" target="_blank" rel="noopener"><div class="document-preview"><img src="assets/studio-roast-blueprint-rev-d-1.png" loading="lazy" alt="Dimensioned Revision D blueprint"></div><div class="document-meta"><span>PDF · 2 <span data-i18n="pages">pages</span> · METRIC</span><h3 data-i18n="blueprints">Dimensioned blueprints</h3><p data-i18n="blueprintsSub">Current metric plans, elevations & fabrication notes</p><span class="document-arrow">↗</span></div></a><a class="document" href="downloads/manufacturer-brief-en.txt" target="_blank" rel="noopener"><div class="document-preview"><img src="assets/studio-roast-logo-led-v2.png" loading="lazy" alt="Studio Roast white LED lettering"></div><div class="document-meta"><span>TXT · ENGLISH</span><h3 data-i18n="sketch">Manufacturer brief</h3><p data-i18n="sketchSub">English design intent & items for factory review</p><span class="document-arrow">↗</span></div></a></div>
+    <div class="download-row"><a href="downloads/cart-specification.json" download data-i18n="jsonDownload">Dimension data · JSON ↓</a><a href="downloads/manufacturer-brief-en.txt" download data-i18n="briefDownload">English manufacturer brief · TXT ↓</a><button id="share" type="button" data-i18n="share">Copy this view link ↗</button></div>
+  </section>
+  <p id="announcement" class="announcement" role="status" aria-live="polite"></p>
+</main>
+<footer><a class="brand footer-brand" href="#"><span class="brand-icon studio-icon">SR</span><span>STUDIO ROAST<small>REVISION D / DESIGN HANDOFF</small></span></a><p data-i18n="footer">Metric dimensions · English throughout · One model for all views<br>Design reference; final fabrication requires shop drawings.</p><a href="https://github.com/alghazaliabdullah3-debug/coffee-cart-manufacturer-guide" target="_blank" rel="noopener">GitHub ↗</a></footer>
+<noscript><p class="alert">Enable JavaScript for the 3D explorer. The PDF downloads above remain available.</p></noscript>
+</body></html>

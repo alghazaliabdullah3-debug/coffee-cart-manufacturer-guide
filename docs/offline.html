@@ -1,0 +1,664 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#163f3c">
+  <meta name="description" content="Studio Roast coffee cart manufacturer guide. Interactive 3D, metric dimensions, top plan and English fabrication notes.">
+  <title>Studio Roast · Coffee Cart | Revision D</title>
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <style>@charset "UTF-8";
+:root{--ink:#1b302e;--muted:#6a7771;--green:#163f3c;--teal:#237a6c;--paper:#f7f6f1;--line:#dce1d9;--amber:#9b681c;--light-amber:#f7edd8;--white:#fff;--soft:#edf1e9;color-scheme:light;font-family:Inter,"Segoe UI","Microsoft YaHei","PingFang SC",system-ui,sans-serif;font-synthesis:none}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:96px}body{margin:0;color:var(--ink);background:var(--paper);font-size:15px;line-height:1.65}button,input,a{-webkit-tap-highlight-color:transparent}button,a{touch-action:manipulation}a{color:inherit;text-decoration:none}button{font:inherit;color:inherit;cursor:pointer}button:disabled{cursor:default;opacity:.45}button:focus-visible,a:focus-visible,canvas:focus-visible{outline:3px solid #61998c;outline-offset:4px}button{border:0;background:none}img{display:block;max-width:100%}h1,h2,h3,p{margin:0}h2,h3{font-weight:600}h2{font-size:30px;line-height:1.3;letter-spacing:-1px}h3{font-size:20px}main{max-width:1440px;margin:auto;padding:0 48px}.small{font-size:12px}.muted{color:var(--muted)}.skip{position:fixed;left:16px;top:-100px;background:var(--green);color:white;padding:10px;z-index:99}.skip:focus{top:10px}.site-header{height:90px;max-width:1536px;padding:0 48px;display:flex;align-items:center;justify-content:space-between;gap:24px;margin:auto;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:12px;font-size:13px;letter-spacing:1.8px;font-weight:700;line-height:1.3;white-space:nowrap}.brand small{display:block;font-size:9px;letter-spacing:1.2px;font-weight:500;margin-top:5px;color:var(--muted)}.brand-icon{width:38px;height:42px;border:1px solid var(--green);border-radius:50% 50% 45% 45%;display:grid;place-items:center;font-family:Georgia,serif;font-size:29px;letter-spacing:-3px;position:relative}.brand-icon>span{font-size:19px;position:absolute;right:6px;top:2px}.site-header nav{display:flex;gap:30px;font-size:13px}.site-header nav a:hover{color:var(--teal)}.language{border:1px solid #c7d0c7;padding:8px 12px;font-size:12px;min-width:70px;border-radius:4px}.language span{margin-left:8px}.intro{display:flex;justify-content:space-between;align-items:center;padding:54px 0 38px;gap:24px}.eyebrow{display:flex;gap:9px;align-items:center;color:var(--teal);font-size:10px;letter-spacing:1.8px;font-weight:650;text-transform:uppercase;margin-bottom:18px}.live-dot{height:7px;width:7px;background:var(--teal);border-radius:50%}h1{font-size:clamp(32px,4.4vw,58px);line-height:1.2;letter-spacing:-2px;font-weight:550}h1 br{display:none}.intro-copy{margin-top:17px;max-width:630px;font-size:14px;color:var(--muted)}.intro-aside{display:grid;grid-template-columns:66px 1fr;gap:10px 20px;align-items:center;font-size:12px;color:var(--muted);min-width:255px}.rev-stamp{font-family:Georgia,serif;font-size:46px;line-height:1;border:1px solid #aab9ac;border-radius:50%;height:67px;width:67px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--green)}.rev-stamp small{font:6px system-ui;letter-spacing:1.1px;margin-top:1px}.status-pill{grid-column:2;font-size:10px;border:1px solid #c9d6c9;background:#edf2e8;color:#47694f;padding:3px 8px;width:fit-content;border-radius:3px}.explorer{border:1px solid #d2dbd0;border-radius:10px;overflow:hidden;background:white;box-shadow:0 12px 36px #213c2906;scroll-margin-top:20px}.explorer-top{display:flex;align-items:center;justify-content:space-between;padding:17px 24px;border-bottom:1px solid var(--line)}.explorer-top h2{display:flex;gap:10px;align-items:center;font-size:14px;letter-spacing:0}.section-index{font-size:11px;font-weight:400;letter-spacing:1px;color:#8c9a8e;margin-right:13px;vertical-align:middle}.unit-tag{font-size:11px;border:1px solid var(--line);border-radius:4px;padding:2px 8px}.explorer-grid{display:grid;grid-template-columns:minmax(0,1fr) 292px}.model-column{min-width:0}.viewbar{display:flex;gap:3px;padding:17px 20px 0;flex-wrap:wrap;position:relative;z-index:2}.viewbar button{font-size:11px;padding:7px 12px;border:1px solid transparent;border-radius:5px;line-height:1.4;color:#637369;min-height:34px}.viewbar button:hover{background:#f1f5ee}.viewbar button.active{background:var(--green);color:white}.stage{height:470px;position:relative;overflow:hidden;background:radial-gradient(ellipse 36% 6% at 50% 85%,#40534522,transparent 98%),linear-gradient(0deg,#f6f8f3,#fdfefd 75%)}#cart{width:100%;height:100%;display:block;touch-action:none;cursor:grab}#cart:active{cursor:grabbing}#annotations{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}.stage-label{position:absolute;left:24px;top:18px;font-size:9px;letter-spacing:1px;color:#8d998d;z-index:1;pointer-events:none}.stage-label>span:first-child{padding:0 5px}.stage-bottom{position:absolute;bottom:17px;left:24px;right:20px;display:flex;align-items:center;justify-content:space-between;pointer-events:none;color:#7b887b;font-size:10px}.zoom-controls{display:flex;align-items:center;background:#ffffffde;border:1px solid var(--line);border-radius:5px;pointer-events:auto}.zoom-controls button{padding:4px 10px;min-height:31px;font-size:11px}.zoom-controls button:first-child,.zoom-controls button:last-child{font-size:17px}.model-tools{padding:14px 20px;display:flex;gap:20px;align-items:center;border-top:1px solid var(--line);flex-wrap:wrap;font-size:11px}.toggle{display:flex;align-items:center;gap:6px;cursor:pointer}.toggle input{accent-color:var(--green);width:13px;height:13px;margin:0}.model-tools button{font-size:11px;padding:0}.model-tools button:hover{color:var(--teal)}.spin-icon{margin-right:5px;font-size:17px}.model-footnote{background:#edf3e9;display:flex;align-items:center;gap:8px;font-size:11px;padding:10px 22px;color:#42634a}.swatch{width:14px;height:9px;border:2px solid #8aa88b;border-top:0;transform:rotate(180deg)}.detail-panel{padding:22px;border-left:1px solid var(--line);background:#fafbf7}.panel-heading{display:flex;align-items:center;justify-content:space-between;font-size:12px;font-weight:600;margin-bottom:18px}.part-tabs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:24px}.part-tabs button{border:1px solid var(--line);background:#fff;padding:5px 9px;min-height:31px;border-radius:4px;font-size:10px;color:#6a7b6b}.part-tabs button.active{border-color:var(--teal);color:var(--teal);background:#e9f2ea}#part-detail h3{font-size:20px;line-height:1.35;letter-spacing:-.5px;margin:10px 0}#part-detail .part-number{font-size:10px;letter-spacing:1.4px;color:#809181}#part-detail .part-measure{font-size:26px;line-height:1.3;letter-spacing:-.7px;margin:15px 0 4px;font-variant-numeric:tabular-nums}#part-detail .part-measure small{font-size:12px;letter-spacing:0}#part-detail .part-note{font-size:12px;line-height:1.9;color:#6e7c70;margin-top:14px}.badge{display:inline-block;font-size:10px;line-height:1.5;padding:3px 7px;border-radius:3px;color:#39654b;background:#e8f1e8}.badge.proposed{color:var(--amber);background:var(--light-amber)}.text-link{font-size:11px;color:var(--teal);padding:0;margin-top:20px}.orientation{border-top:1px solid var(--line);margin-top:26px;padding-top:17px;display:flex;gap:10px;align-items:center;font-size:10px;color:#8a9788}.orientation-mark{font-size:26px;line-height:1}#hotspots{position:absolute;inset:0;pointer-events:none}.hotspot{position:absolute;transform:translate(-50%,-50%);border:1px solid #fff;background:var(--green);color:white;box-shadow:0 1px 5px #193c3c33;border-radius:50%;height:26px;width:26px;display:grid;place-items:center;padding:0;font-size:10px;pointer-events:auto}.hotspot.active{background:#d9c29b;color:#344332;border:2px solid white}#webgl-fallback{position:absolute;inset:30px;padding:25px;background:white;overflow:auto;font-size:12px}#webgl-fallback img{max-height:350px;margin:auto}.key-dimensions{display:grid;grid-template-columns:1.15fr .8fr 1.2fr;gap:24px;border-bottom:1px solid var(--line);padding:32px 0}.key-dimensions article+article{border-left:1px solid var(--line);padding-left:30px}.key-dimensions p{font-size:11px;color:#6d7c6e;margin-bottom:5px}.key-dimensions strong{font-size:24px;font-weight:550;letter-spacing:-.8px;white-space:nowrap;font-variant-numeric:tabular-nums}.key-dimensions strong>span{font-size:17px;color:#8f9d8c}.key-dimensions strong>small{font-size:12px;font-weight:400;letter-spacing:0}.key-dimensions article>span{display:block;font-size:10px;color:#859082;margin-top:4px}.section-spacing{padding:64px 0 0}.section-heading{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:28px}.section-heading .eyebrow{margin-bottom:10px}.button{padding:10px 16px;display:inline-block;font-size:12px;border-radius:4px;white-space:nowrap}.outline{border:1px solid #bbc9b9;background:transparent;color:var(--green)}.outline:hover{background:var(--soft)}.plan-grid{display:grid;grid-template-columns:1.6fr 1fr;gap:30px}.plan-card{background:#fff;border:1px solid var(--line);border-radius:7px;align-self:start;overflow:hidden}.plan-caption{display:flex;justify-content:space-between;gap:16px;align-items:center;padding:17px 20px;border-bottom:1px solid var(--line);font-size:11px}.plan-caption span{font-size:9px;color:var(--muted)}#top-plan{padding:5px 12px}#top-plan svg{width:100%;height:auto;display:block}.plan-note{padding:0 20px 17px;font-size:10px;color:var(--muted)}.plan-feature{cursor:pointer;outline:none}.plan-feature:hover .feature-shape,.plan-feature:focus .feature-shape{stroke:#0c6c5b;stroke-width:6}.plan-feature.selected .feature-shape{fill:#8eb8a9}.cutout-schedule{padding:2px 0}.cutout-schedule h3{font-size:17px;margin-bottom:8px}.cutout-schedule>.small{font-size:10px;margin-bottom:14px}.cutout-row{display:grid;grid-template-columns:25px 1fr;gap:12px;border-top:1px solid var(--line);padding:12px 0}.cutout-id{border:1px solid #b4c5b6;border-radius:50%;width:23px;height:23px;text-align:center;color:var(--teal);font-size:10px;align-self:center}.cutout-row button{text-align:left;padding:0;font-size:12px}.cutout-row button:hover{color:var(--teal)}.cutout-row strong{font-weight:550}.cutout-row .row-dims{float:right;font-size:11px;white-space:nowrap}.cutout-row p{font-size:10px;color:var(--muted);margin-top:3px}.alert{border-left:2px solid #b88b41;background:#f5eedf;padding:13px 16px;margin-top:12px;font-size:11px;color:#795b2c}.alert strong{font-weight:650}.alert p{margin-top:4px;line-height:1.8}.table-wrap{margin-top:30px;overflow-x:auto;border:1px solid var(--line);border-radius:6px;background:#fff}table{border-collapse:collapse;width:100%;font-size:12px;text-align:left}caption{text-align:left;padding:17px 20px;color:#4d624f;font-size:12px;font-weight:600;border-bottom:1px solid var(--line)}th{background:#f1f4ed;color:#70816c;font-size:10px;font-weight:500}th,td{padding:12px 20px;border-bottom:1px solid #e8ece5}tr:last-child td{border:0}td:nth-child(2){font-variant-numeric:tabular-nums;white-space:nowrap;font-weight:550}.table-note{font-size:10px;font-weight:400;color:var(--muted);margin-left:8px}.build-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.build-card{padding:28px 32px;border:1px solid var(--line);border-radius:6px;background:#fff}.card-code{font-size:9px;letter-spacing:1.4px;color:#96a38d}.build-card h3{margin-top:9px;font-size:20px}.build-card ul{padding:0;list-style:none;margin:18px 0 0}.build-card li{padding:10px 0 10px 20px;position:relative;font-size:12px;border-bottom:1px solid #edf0e8;color:#62715f;line-height:1.9}.build-card li:last-child{border:0}.build-card li:before{content:'✓';color:#659072;position:absolute;left:0}.build-card:last-child li:before{content:'□';color:#ac8650}.review-banner{display:flex;gap:20px;align-items:center;background:#e9ede2;border-radius:4px;padding:18px 24px;margin-top:22px;color:#66745e;font-size:11px;line-height:1.9}.review-banner>span{font-size:25px;color:#708463}.documents-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.document{border:1px solid var(--line);border-radius:6px;overflow:hidden;background:white;transition:transform .2s,border-color .2s}.document:hover{transform:translateY(-3px);border-color:#90aa8d}.document-preview{height:205px;padding:17px;background:#eeeee6;overflow:hidden;display:flex;align-items:center;justify-content:center}.document-preview img{height:100%;width:100%;object-fit:contain}.document-preview.board img{width:100%;height:auto}.document-meta{padding:21px 22px 24px;position:relative}.document-meta>span:first-child{font-size:9px;letter-spacing:.5px;color:#8d9b87}.document-meta h3{font-size:17px;margin-top:8px}.document-meta p{font-size:10px;color:var(--muted);margin-top:5px;padding-right:20px}.document-arrow{position:absolute;right:23px;bottom:25px;color:#83977d;font-size:22px}.download-row{margin-top:24px;display:flex;gap:25px;flex-wrap:wrap;justify-content:flex-start;border-top:1px solid var(--line);padding-top:20px;font-size:11px;color:#577353}.download-row button{font-size:11px;padding:0}.download-row a:hover,.download-row button:hover{text-decoration:underline}.announcement{position:fixed;bottom:25px;left:50%;transform:translateX(-50%);background:var(--green);color:white;border-radius:5px;padding:0;z-index:20;box-shadow:0 5px 20px #163f3c25;font-size:12px}.announcement:empty{display:none}.announcement:not(:empty){padding:10px 20px}footer{max-width:1440px;margin:60px auto 0;padding:30px 48px;display:flex;justify-content:space-between;gap:25px;align-items:center;border-top:1px solid var(--line);font-size:10px;color:#8c9986}footer .brand{font-size:10px;letter-spacing:1px}footer .brand small{font-size:7px}footer .brand-icon{height:32px;width:29px;font-size:22px}footer .brand-icon>span{font-size:13px;right:4px}footer p{line-height:1.9}footer>a:last-child{font-size:11px}.dimension-label{font-family:Inter,"Segoe UI","Microsoft YaHei",sans-serif;font-size:10px;fill:#426c64;paint-order:stroke;stroke:#f9fcf7;stroke-width:5px;stroke-linejoin:round;stroke-linecap:round}.dimension-line{stroke:#609386;stroke-width:1;fill:none}.proposed-label{fill:#9b681c}.dimension-proposed{stroke:#b99754}
+@media(min-width:1500px){.stage{height:525px}.explorer-grid{grid-template-columns:minmax(0,1fr) 310px}.intro{padding-top:65px}}
+@media(max-width:1150px){main{padding:0 28px}.site-header{padding:0 28px}.site-header nav{gap:18px}.intro-aside{min-width:230px}.explorer-grid{grid-template-columns:minmax(0,1fr) 255px}.detail-panel{padding:20px 17px}.viewbar{padding-left:15px;gap:0}.viewbar button{padding:7px 9px}.stage{height:440px}.model-tools{gap:14px;padding:13px 16px}.key-dimensions strong{font-size:20px}.key-dimensions article+article{padding-left:20px}.key-dimensions{gap:15px}.plan-grid{grid-template-columns:1.3fr 1fr;gap:24px}.document-preview{height:175px}footer{padding:30px 28px}}
+@media(max-width:850px){.site-header{height:74px}.site-header nav{display:none}.intro{padding:34px 0 28px}.intro-aside{min-width:auto;display:block;max-width:170px;font-size:10px}.rev-stamp{display:none}.intro-aside .status-pill{display:inline-block;margin-top:9px}h1{font-size:35px}.intro-copy{font-size:12px;max-width:400px}.explorer-grid{grid-template-columns:minmax(0,1fr) 225px}.stage{height:390px}.viewbar button{font-size:10px;padding:6px 8px}.detail-panel{padding:18px 14px}#part-detail .part-measure{font-size:22px}#part-detail .part-note{font-size:11px}.part-tabs{margin-bottom:18px;gap:4px}.part-tabs button{font-size:9px;padding:4px 6px}.orientation{margin-top:20px}.key-dimensions{grid-template-columns:1fr 1fr}.key-dimensions article:last-child{grid-column:1/-1;border:0;padding-left:0;padding-top:17px;border-top:1px solid var(--line)}.plan-grid{grid-template-columns:1fr}.cutout-schedule{padding-top:6px}.cutout-row{padding:10px 0}.cutout-schedule>.small{font-size:11px}.cutout-row button{font-size:13px}.plan-note{font-size:11px}.build-card{padding:24px}.documents-grid{gap:15px}.document-meta{padding:17px}.document-meta h3{font-size:15px}.document-preview{height:145px}.document-meta p{font-size:9px}.section-spacing{padding-top:48px}.section-heading h2{font-size:26px}.section-heading>.small{max-width:180px;text-align:right}footer p{display:none}}
+@media(max-width:620px){html{scroll-padding-top:20px}main{padding:0 16px}.site-header{padding:0 18px;height:68px}.brand{font-size:11px;gap:10px}.brand small{font-size:7px}.brand-icon{height:33px;width:29px;font-size:23px}.brand-icon>span{font-size:14px;right:4px;top:1px}.language{font-size:11px;padding:7px 9px}.intro{padding:30px 0 26px;align-items:start}.intro .eyebrow{font-size:8px;letter-spacing:.8px;margin-bottom:14px}.intro-aside{display:none}h1{font-size:35px;letter-spacing:-1.6px}h1 br{display:block}.intro-copy{font-size:12px;max-width:330px;margin-top:14px;line-height:1.9}.explorer-top{padding:14px 16px}.explorer-top h2{font-size:12px}.unit-tag{font-size:9px}.explorer-grid{grid-template-columns:1fr}.viewbar{padding:13px 12px 0;gap:2px;justify-content:space-between}.viewbar button{font-size:10px;padding:6px 7px;min-height:34px}.stage{height:360px}.stage-label{top:12px;left:17px;font-size:8px}.stage-bottom{left:17px;right:12px;font-size:9px;bottom:13px}.zoom-controls button{font-size:9px;min-height:30px;padding:3px 9px}.model-tools{font-size:10px;gap:12px 17px;padding:14px}.model-tools button{font-size:10px}.model-footnote{padding:10px 15px;font-size:10px}.detail-panel{border-left:0;border-top:1px solid var(--line);padding:18px}.panel-heading{margin-bottom:12px}.part-tabs{margin-bottom:15px}.part-tabs button{padding:5px 9px;font-size:10px;min-height:32px}#part-detail{display:grid;grid-template-columns:1fr auto;column-gap:18px}#part-detail .part-number{grid-column:1/-1;font-size:9px}#part-detail h3{font-size:18px;margin:6px 0}#part-detail .part-measure{grid-column:2;grid-row:2;font-size:22px;margin:5px 0}#part-detail .badge{width:fit-content}#part-detail .part-note{grid-column:1/-1;line-height:1.8;margin-top:9px}.text-link{margin-top:10px;font-size:10px}.orientation{display:none}.key-dimensions{padding:23px 0;gap:16px}.key-dimensions strong{font-size:19px}.key-dimensions p{font-size:10px}.key-dimensions article>span{font-size:8px}.key-dimensions article+article{padding-left:15px}.key-dimensions article:last-child{padding-left:0}.key-dimensions article:first-child strong{font-size:16px}.key-dimensions article:first-child strong>small{font-size:9px}.key-dimensions article:first-child strong>span{font-size:12px}.section-heading{gap:12px;align-items:start;margin-bottom:22px}.section-heading h2{font-size:23px;letter-spacing:-.7px}.section-index{font-size:9px;margin-right:7px}.section-heading .eyebrow{font-size:8px;letter-spacing:1px}.button{padding:7px 9px;font-size:9px}.section-spacing{padding-top:40px}.section-heading .button{margin-top:25px}.plan-caption{padding:14px;font-size:10px}.plan-caption span{font-size:8px}#top-plan{padding:0 4px}.plan-note{font-size:9px;padding:0 14px 14px}.cutout-row .row-dims{font-size:10px}.cutout-row button{font-size:12px}.table-wrap{margin-top:25px}table{font-size:10px;min-width:520px}th,td{padding:10px 14px}.table-note{font-size:9px;display:block;margin-left:0}.build-grid{grid-template-columns:1fr;gap:16px}.build-card{padding:22px}.build-card li{font-size:11px}.build-card h3{font-size:19px}.review-banner{padding:16px;gap:14px;font-size:10px}.documents-grid{grid-template-columns:1fr}.document{display:grid;grid-template-columns:38% 1fr}.document-preview{height:150px;padding:8px}.document-meta{padding:18px 16px}.document-meta h3{font-size:17px}.document-meta p{font-size:10px}.document-meta>span:first-child{font-size:8px}.document-arrow{font-size:20px;bottom:13px;right:18px}.section-heading>.small{font-size:8px;max-width:100px;margin-top:26px}.download-row{gap:14px;font-size:10px}.download-row button{font-size:10px}footer{margin-top:40px;padding:25px 18px}.footer-brand{font-size:9px}footer>a:last-child{font-size:10px}.dimension-label{font-size:9px}.hotspot{width:23px;height:23px;font-size:9px}.announcement{max-width:90vw;white-space:nowrap;font-size:10px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.document{transition:none}}
+@media print{body{background:#fff;font-size:11px}main{max-width:none;padding:0}.site-header{height:65px;padding:0}.site-header nav,.language,.model-tools,.viewbar,.stage-bottom,#hotspots,.zoom-controls,.skip,.announcement,.download-row,#part-top,.section-heading .button,footer>a:last-child{display:none!important}.intro{padding:20px 0}.intro-copy{font-size:11px}.intro-aside{display:block}.intro h1{font-size:32px}.explorer{break-inside:avoid;box-shadow:none}.explorer-grid{grid-template-columns:1fr 230px}.stage{height:330px}.stage-label{display:none}.detail-panel{padding:15px}.orientation{display:none}.part-tabs{display:none}#part-detail .part-note{font-size:10px}.key-dimensions{padding:18px 0}.key-dimensions strong{font-size:20px}.section-spacing{padding-top:30px}.plan-section{break-before:page}.plan-grid{grid-template-columns:1.4fr 1fr;gap:20px}.plan-note{font-size:9px}.section-heading h2{font-size:24px}th,td{padding:8px 12px}.build-section{break-before:page}.build-grid{gap:15px}.build-card{padding:20px}.build-card li{font-size:10px}.documents-section{break-before:page}.documents-grid{gap:15px}.document-preview{height:155px}.document-meta h3{font-size:15px}.document-meta{padding:15px}.section-heading,.build-card,.review-banner,.document{break-inside:avoid}footer{margin-top:25px;padding:20px 0}.dimension-label{font-size:10px}a[href^='http']:after{content:''}}
+
+[hidden]{display:none!important}.selection-note{font-size:9px;color:#84947f;margin-top:10px}
+
+.document:last-child .document-preview{background:#40524d}
+
+.studio-icon{font-size:17px!important;letter-spacing:-2px;padding-right:3px}
+</style>
+  
+</head>
+<body>
+<a class="skip" href="#explore">Skip to the 3D model</a>
+<header class="site-header">
+  <a class="brand" href="#"><span class="brand-icon studio-icon">SR</span><span>STUDIO ROAST<small data-i18n="brandSub">MANUFACTURER GUIDE · REV D</small></span></a>
+  <nav aria-label="Main navigation"><a href="#explore" data-i18n="navExplore">3D explorer</a><a href="#plan" data-i18n="navPlan">Dimensions</a><a href="#build" data-i18n="navBuild">Builder notes</a><a href="#documents" data-i18n="navDocs">Documents</a></nav>
+  
+</header>
+<main>
+  <section class="intro">
+    <div><p class="eyebrow"><span class="live-dot"></span><span data-i18n="introEyebrow">STUDIO ROAST / COFFEE CART / REVISION D</span></p><h1 data-i18n="title">Your cart.<br> From every angle.</h1><p class="intro-copy" data-i18n="introCopy">Explore the form, inspect the dimensions, and hand your manufacturer one clear English-language design.</p></div>
+    <div class="intro-aside"><span class="rev-stamp">D<small>REVISION</small></span><p data-i18n="units">PRIMARY UNITS: mm<br>Length × Depth × Height</p><span class="status-pill" data-i18n="designStage">Design intent · Factory review</span></div>
+  </section>
+
+  <section id="explore" class="explorer" aria-labelledby="explorer-title">
+    <div class="explorer-top"><h2 id="explorer-title"><span class="section-index">01</span><span data-i18n="exploreTitle">Explore the cart</span></h2><span class="unit-tag">mm</span></div>
+    <div class="explorer-grid">
+      <div class="model-column">
+        <div class="viewbar" role="group" aria-label="3D views">
+          <button data-view="iso" class="active" data-i18n="viewIso" type="button">Perspective</button><button data-view="front" data-i18n="viewFront" type="button">Operator</button><button data-view="rear" data-i18n="viewRear" type="button">Customer rear</button><button data-view="left" data-i18n="viewLeft" type="button">Left end</button><button data-view="right" data-i18n="viewRight" type="button">Right end</button><button data-view="top" data-i18n="viewTop" type="button">Top</button>
+        </div>
+        <div class="stage" id="stage">
+          <span class="stage-label">REV D <span>·</span> <span data-i18n="oneModel">ONE SHARED MODEL</span></span>
+          <canvas id="cart" tabindex="0" role="img" aria-label="Interactive coffee cart. Use view buttons or arrow keys to rotate, plus and minus to zoom."></canvas>
+          <svg id="annotations" aria-hidden="true"></svg>
+          <div id="hotspots" aria-label="Select a feature"></div>
+          <div id="webgl-fallback" hidden><p data-i18n="fallback">3D is unavailable on this device. Use the top plan and the complete drawings below.</p><img src="assets/studio-roast-model-views-rev-d.png" alt="Revision D corrected cart views"></div>
+          <div class="stage-bottom"><span data-i18n="gesture">Drag to rotate · Scroll to zoom</span><div class="zoom-controls"><button id="zoom-out" type="button" aria-label="Zoom out">−</button><button id="fit" type="button" data-i18n="fit">Fit view</button><button id="zoom-in" type="button" aria-label="Zoom in">+</button></div></div>
+        </div>
+        <div class="model-tools"><label class="toggle"><input type="checkbox" id="dimensions" checked><span data-i18n="showDims">Dimensions</span></label><label class="toggle"><input type="checkbox" id="hide-ledge"><span data-i18n="hideLedge">Hide guard & ledge</span></label><button type="button" id="spin" aria-pressed="false"><span class="spin-icon">↻</span><span data-i18n="spin">Auto rotate</span></button><button type="button" id="save-view" data-i18n="saveView">Save view ↓</button></div>
+        <div class="model-footnote"><span class="swatch"></span><span data-i18n="ledgeRule">U-shaped ledge: rear + both ends, operator side open. Green indicates selection only.</span></div>
+      </div>
+      <aside class="detail-panel">
+        <div class="panel-heading"><span data-i18n="inspect">INSPECT A COMPONENT</span><span class="small muted">REV D</span></div>
+        <div class="part-tabs" id="part-tabs" role="group" aria-label="Cart components"></div>
+        <div id="part-detail" aria-live="polite"></div>
+        <button id="part-top" class="text-link" type="button" data-i18n="inspectTop">Inspect in top plan ↗</button>
+        <div class="orientation"><span class="orientation-mark">↙</span><p data-i18n="orientation">FRONT is the barista / operator side.<br>REAR is the customer serving side.</p></div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="key-dimensions" aria-label="Principal dimensions">
+    <article><p data-i18n="bodySize">BODY · LENGTH × DEPTH</p><strong>1828.8 <span>×</span> 1066.8<small> mm</small></strong><span data-i18n="bodySizeSub">Client specified · 6 ft × 3.5 ft</span></article>
+    <article><p data-i18n="projection">OUTWARD LEDGE PROJECTION</p><strong>304.8<small> mm</small></strong><span data-i18n="projectionSub">Client specified · Three sides · 12 in</span></article>
+    <article><p data-i18n="envelope">OVERALL ENVELOPE · LENGTH × DEPTH</p><strong>2438.4 <span>×</span> 1371.6<small> mm</small></strong><span data-i18n="envelopeSub">Calculated from body + outward ledge</span></article>
+  </section>
+
+  <section id="plan" class="plan-section section-spacing">
+    <div class="section-heading"><div><p class="eyebrow" data-i18n="planEyebrow">MEASURE / CUTOUT LAYOUT</p><h2><span class="section-index">02</span><span data-i18n="planTitle">A place for every detail.</span></h2></div><a class="button outline" href="downloads/studio-roast-blueprint-rev-d.pdf" target="_blank" rel="noopener" data-i18n="blueprintBtn">Open blueprint ↗</a></div>
+    <div class="plan-grid"><div class="plan-card"><div class="plan-caption"><strong data-i18n="topPlan">TOP PLAN</strong><span data-i18n="originNote">Origin O: operator-front-left body corner</span></div><div id="top-plan"></div><p class="plan-note" data-i18n="planNote">Select a numbered feature. Positions are proposed; verify against actual fittings and the sink template.</p></div><div class="cutout-schedule"><h3 data-i18n="schedule">Countertop opening schedule</h3><p class="muted small" data-i18n="coordinateNote">X runs right; Y runs rearward. Rectangles use their front-left corner; round holes use their centre. Coordinates in mm.</p><div id="cutout-list"></div><div class="alert"><strong data-i18n="sinkAlertTitle">9 is an empty sink opening only</strong><p data-i18n="sinkAlert">254 mm side-to-side (X) × 355.6 mm front-to-back (Y). This is a 10 in W × 14 in L opening for the owner-supplied sink. No basin is included. Verify the actual installation template before cutting.</p></div></div></div>
+    <div class="table-wrap"><table id="dimension-table"><caption data-i18n="dimSchedule">Dimension schedule · All dimensions in mm unless noted</caption><thead><tr><th data-i18n="item">Item</th><th data-i18n="dimension">Dimension</th><th data-i18n="status">Status / basis</th></tr></thead><tbody></tbody></table></div>
+  </section>
+
+  <section id="build" class="build-section section-spacing">
+    <div class="section-heading"><div><p class="eyebrow" data-i18n="buildEyebrow">FABRICATION / DESIGN HANDOFF</p><h2><span class="section-index">03</span><span data-i18n="buildTitle">Built from a clear brief.</span></h2></div><button class="button outline" type="button" id="print" data-i18n="print">Print builder brief ↗</button></div>
+    <div class="build-grid"><article class="build-card"><span class="card-code">A / DESIGN INTENT</span><h3 data-i18n="intentTitle">Design details to preserve</h3><ul id="intent-list"></ul></article><article class="build-card"><span class="card-code">B / FACTORY REVIEW</span><h3 data-i18n="reviewTitle">Confirm before fabrication</h3><ul id="review-list"></ul></article></div>
+    <div class="review-banner"><span>↗</span><p data-i18n="reviewBanner">This guide communicates design intent. Green labels identify client or reference dimensions; amber labels identify proposals. Before cutting, the manufacturer must provide final shop drawings confirming sheet gauges, supports, installation tolerances and load capacity.</p></div>
+  </section>
+
+  <section id="documents" class="section-spacing documents-section">
+    <div class="section-heading"><div><p class="eyebrow" data-i18n="docsEyebrow">ONE REVISION / COMPLETE REFERENCE</p><h2><span class="section-index">04</span><span data-i18n="docsTitle">Take the complete design.</span></h2></div><span class="small muted" data-i18n="docsRevision">Revision D · Sink orientation + rear LED sign</span></div>
+    <div class="documents-grid"><a class="document" href="downloads/studio-roast-manufacturer-guide-rev-d.pdf" target="_blank" rel="noopener"><div class="document-preview board"><img src="assets/studio-roast-model-views-rev-d.png" loading="lazy" alt="Corrected Revision D finished multi-angle views"></div><div class="document-meta"><span>PDF · 4 <span data-i18n="pages">pages</span> · CURRENT</span><h3 data-i18n="fullPackage">Complete design package</h3><p data-i18n="fullPackageSub">Current blueprints, details & shared-model views</p><span class="document-arrow">↗</span></div></a><a class="document" href="downloads/studio-roast-blueprint-rev-d.pdf" target="_blank" rel="noopener"><div class="document-preview"><img src="assets/studio-roast-blueprint-rev-d-1.png" loading="lazy" alt="Dimensioned Revision D blueprint"></div><div class="document-meta"><span>PDF · 2 <span data-i18n="pages">pages</span> · METRIC</span><h3 data-i18n="blueprints">Dimensioned blueprints</h3><p data-i18n="blueprintsSub">Current metric plans, elevations & fabrication notes</p><span class="document-arrow">↗</span></div></a><a class="document" href="downloads/manufacturer-brief-en.txt" target="_blank" rel="noopener"><div class="document-preview"><img src="assets/studio-roast-logo-led-v2.png" loading="lazy" alt="Studio Roast white LED lettering"></div><div class="document-meta"><span>TXT · ENGLISH</span><h3 data-i18n="sketch">Manufacturer brief</h3><p data-i18n="sketchSub">English design intent & items for factory review</p><span class="document-arrow">↗</span></div></a></div>
+    <div class="download-row"><a href="downloads/cart-specification.json" download data-i18n="jsonDownload">Dimension data · JSON ↓</a><a href="downloads/manufacturer-brief-en.txt" download data-i18n="briefDownload">English manufacturer brief · TXT ↓</a><button id="share" type="button" data-i18n="share">Copy this view link ↗</button></div>
+  </section>
+  <p id="announcement" class="announcement" role="status" aria-live="polite"></p>
+</main>
+<footer><a class="brand footer-brand" href="#"><span class="brand-icon studio-icon">SR</span><span>STUDIO ROAST<small>REVISION D / DESIGN HANDOFF</small></span></a><p data-i18n="footer">Metric dimensions · English throughout · One model for all views<br>Design reference; final fabrication requires shop drawings.</p><a href="https://github.com/alghazaliabdullah3-debug/coffee-cart-manufacturer-guide" target="_blank" rel="noopener">GitHub ↗</a></footer>
+<noscript><p class="alert">Enable JavaScript for the 3D explorer. The PDF downloads above remain available.</p></noscript>
+<script type="module">const copy = {
+  "brandSub": "MANUFACTURER GUIDE · REV D",
+  "navExplore": "3D explorer",
+  "navPlan": "Dimensions",
+  "navBuild": "Builder notes",
+  "navDocs": "Documents",
+  "introEyebrow": "STUDIO ROAST / COFFEE CART / REVISION D",
+  "title": "Your cart.<br> From every angle.",
+  "introCopy": "Explore the form, inspect the dimensions, and hand your manufacturer one clear English-language design.",
+  "units": "PRIMARY UNITS: mm<br>Length × Depth × Height",
+  "designStage": "Design intent · Factory review",
+  "exploreTitle": "Explore the cart",
+  "viewIso": "Perspective",
+  "viewFront": "Operator",
+  "viewRear": "Customer rear",
+  "viewLeft": "Left end",
+  "viewRight": "Right end",
+  "viewTop": "Top",
+  "oneModel": "ONE SHARED MODEL",
+  "fallback": "3D is unavailable on this device. Use the top plan and the complete drawings below.",
+  "gesture": "Drag to rotate · Scroll to zoom",
+  "fit": "Fit view",
+  "showDims": "Dimensions",
+  "hideLedge": "Hide guard & ledge",
+  "spin": "Auto rotate",
+  "pause": "Pause rotation",
+  "saveView": "Save view ↓",
+  "ledgeRule": "U-shaped ledge: rear + both ends, operator side open. Green indicates selection only.",
+  "inspect": "INSPECT A COMPONENT",
+  "inspectTop": "Inspect in top plan ↗",
+  "orientation": "FRONT is the barista / operator side.<br>REAR is the customer serving side.",
+  "bodySize": "BODY · LENGTH × DEPTH",
+  "bodySizeSub": "Client specified · 6 ft × 3.5 ft",
+  "projection": "OUTWARD LEDGE PROJECTION",
+  "projectionSub": "Client specified · Three sides · 12 in",
+  "envelope": "OVERALL ENVELOPE · LENGTH × DEPTH",
+  "envelopeSub": "Calculated from body + outward ledge",
+  "planEyebrow": "MEASURE / CUTOUT LAYOUT",
+  "planTitle": "A place for every detail.",
+  "blueprintBtn": "Open blueprint ↗",
+  "topPlan": "TOP PLAN",
+  "originNote": "Origin O: operator-front-left body corner",
+  "planNote": "Select a numbered feature. Positions are proposed; verify against actual fittings and the sink template.",
+  "schedule": "Countertop opening schedule",
+  "coordinateNote": "X runs right; Y runs rearward. Rectangles use their front-left corner; round holes use their centre. Coordinates in mm.",
+  "sinkAlertTitle": "9 is an empty sink opening only",
+  "sinkAlert": "254 mm side-to-side (X) × 355.6 mm front-to-back (Y). This is a 10 in W × 14 in L opening for the owner-supplied sink. No basin is included. Verify the actual installation template before cutting.",
+  "dimSchedule": "Dimension schedule · All dimensions in mm unless noted",
+  "item": "Item",
+  "dimension": "Dimension",
+  "status": "Status / basis",
+  "buildEyebrow": "FABRICATION / DESIGN HANDOFF",
+  "buildTitle": "Built from a clear brief.",
+  "print": "Print builder brief ↗",
+  "intentTitle": "Design details to preserve",
+  "reviewTitle": "Confirm before fabrication",
+  "reviewBanner": "This guide communicates design intent. Green labels identify client or reference dimensions; amber labels identify proposals. Before cutting, the manufacturer must provide final shop drawings confirming sheet gauges, supports, installation tolerances and load capacity.",
+  "docsEyebrow": "ONE REVISION / COMPLETE REFERENCE",
+  "docsTitle": "Take the complete design.",
+  "docsRevision": "Revision D · Updated logo, walnut engraving & corrected sink",
+  "pages": "pages",
+  "fullPackage": "Complete design package",
+  "fullPackageSub": "Current metric blueprints, model views & branding details",
+  "blueprints": "Dimensioned blueprints",
+  "blueprintsSub": "Current metric plans, elevations & fabrication notes",
+  "sketch": "Manufacturer brief",
+  "sketchSub": "English design intent & items for factory review",
+  "jsonDownload": "Dimension data · JSON ↓",
+  "briefDownload": "English manufacturer brief · TXT ↓",
+  "share": "Copy this view link ↗",
+  "footer": "Metric dimensions · English throughout · One model for all views<br>Design reference; final fabrication requires shop drawings.",
+  "copied": "View link copied. Ready to share with your manufacturer.",
+  "copyFail": "Copy the link from your browser address bar.",
+  "saved": "Current view saved.",
+  "confirmed": "CLIENT SPECIFIED",
+  "proposed": "PROPOSED · VERIFY",
+  "reference": "RETAINED REFERENCE",
+  "calculated": "CALCULATED",
+  "frontOpen": "OPERATOR SIDE OPEN · NO FOURTH LEDGE",
+  "rearSide": "REAR / CUSTOMER",
+  "frontSide": "FRONT / OPERATOR",
+  "bodyLabel": "BODY",
+  "overallLabel": "OVERALL",
+  "heightLabel": "WORKTOP H",
+  "proposedHeight": "PROPOSED H",
+  "xDirection": "X RIGHT",
+  "yDirection": "Y REARWARD",
+  "removed": "REMOVED: 3, 4, 5, 7",
+  "part": "COMPONENT",
+  "location": "LOCATION",
+  "lengthDepth": "L × D"
+};
+
+const dimensions = [
+  [
+    "Main body · L × D",
+    "1828.8 × 1066.8",
+    "confirmed",
+    "6 ft × 3.5 ft"
+  ],
+  [
+    "Floor to worktop (including casters)",
+    "1000",
+    "reference",
+    "Retained from original reference"
+  ],
+  [
+    "Ledge projection · rear + both ends",
+    "304.8",
+    "confirmed",
+    "12 in, outward"
+  ],
+  [
+    "Overall envelope · L × D",
+    "2438.4 × 1371.6",
+    "calculated",
+    "Body L + 2 × projection; body D + projection"
+  ],
+  [
+    "Guard rise above worktop",
+    "150",
+    "proposed",
+    "Final height not yet specified"
+  ],
+  [
+    "Floor to serving ledge top",
+    "1150",
+    "proposed",
+    "1000 + 150"
+  ],
+  [
+    "9 Sink opening · W(X) × L(Y)",
+    "254 × 355.6",
+    "confirmed",
+    "10 in side-to-side × 14 in front-to-back; verify supplied sink template"
+  ],
+  [
+    "6 Knockbox opening · L × D",
+    "138 × 150",
+    "confirmed",
+    "Box depth to confirm"
+  ],
+  [
+    "Cabinet modules · operator left to right",
+    "580 / 220 / 520 / 508.8",
+    "proposed",
+    "Storage / cups / equipment bay / sink base"
+  ],
+  [
+    "Rear guard inner corner radius",
+    "R40",
+    "proposed",
+    "Corresponding outer ledge edge ≈ R344.8"
+  ],
+  [
+    "Rear LED logo · maximum artwork area",
+    "900 W × 700 H",
+    "proposed",
+    "Proportional artwork; proposed centre 600 mm above floor"
+  ],
+  [
+    "Operator walnut engraving · maximum artwork area",
+    "210 W × 145 H",
+    "proposed",
+    "Centred on existing 750 × 175 mm walnut fascia"
+  ]
+];
+
+const intent = [
+  "Keep the stainless cabinet, left walnut fascia, two round cup dispensers, central open equipment bay and four casters.",
+  "Run the 304.8 mm outward serving ledge along the rear and both ends. Leave the operator side open in every view.",
+  "Features 3, 4, 5 and 7 are removed. Keep the left and central worktop clear.",
+  "Put knockbox 6 at the front-left. Move tool wells 1 and 2 beside the far-right sink opening.",
+  "Feature 9 is a cutout for the owner’s existing sink. No added rinser nozzle, basin, faucet or drain.",
+  "Retain the walnut rear armrest and left folding wing. The model shows the wing stowed.",
+  "Use the updated SR monogram with coffee branch and STUDIO ROAST name: white LED on the customer rear and engraved directly into the operator-facing walnut fascia."
+];
+
+const parts = [
+  {
+    "id": 11,
+    "tab": "Ledge",
+    "name": "U-shaped serving ledge",
+    "measure": "304.8",
+    "status": "confirmed",
+    "note": "Projects 304.8 mm OUTWARD from the rear and both end guards. Operator edge remains open. Top elevation 1150 mm is proposed; edge build-up and supports require factory design.",
+    "point": [
+      914.4,
+      1371.6,
+      1150
+    ]
+  },
+  {
+    "id": 10,
+    "tab": "Guard",
+    "name": "Three-sided stainless guard",
+    "measure": "150",
+    "status": "proposed",
+    "note": "Runs along the rear and full depth of both ends, stopping about 25 mm from the front. The 150 mm rise is proposed. The serving ledge sits at the guard top.",
+    "point": [
+      0,
+      700,
+      1090
+    ]
+  },
+  {
+    "id": 9,
+    "tab": "9 Sink",
+    "name": "Sink opening · cutout only",
+    "measure": "254 × 355.6",
+    "status": "confirmed",
+    "note": "10 in W side-to-side (X) × 14 in L front-to-back (Y). Owner supplies the sink; no basin is installed. Proposed position X=1370, Y=220. Confirm final cutout against the existing sink flange/template. No bowl depth is specified.",
+    "point": [
+      1497,
+      397.8,
+      1003
+    ],
+    "x": 1370,
+    "y": 220,
+    "l": 254,
+    "d": 355.6
+  },
+  {
+    "id": 6,
+    "tab": "6 Knockbox",
+    "name": "Front-left knockbox opening",
+    "measure": "138 × 150",
+    "status": "confirmed",
+    "note": "At the operator-front-left corner. 138 mm along X; 150 mm along Y. Proposed position X=90, Y=90. Box depth, flange and removal method remain to be confirmed.",
+    "point": [
+      159,
+      165,
+      1015
+    ],
+    "x": 90,
+    "y": 90,
+    "l": 138,
+    "d": 150
+  },
+  {
+    "id": 1,
+    "tab": "1 Tool well",
+    "name": "Rectangular tool well by sink",
+    "measure": "100 × 230",
+    "status": "proposed",
+    "note": "Feature 1 moves beside the sink on its left. Opening 100 × 230 mm and position X=1210, Y=270 are proposed; match the selected tool well.",
+    "point": [
+      1260,
+      385,
+      1005
+    ],
+    "x": 1210,
+    "y": 270,
+    "l": 100,
+    "d": 230
+  },
+  {
+    "id": 2,
+    "tab": "2 Round well",
+    "name": "Round tool well by sink",
+    "measure": "Ø90",
+    "status": "proposed",
+    "note": "Feature 2 sits in front of 1, beside the sink. Diameter and centre X=1260, Y=155 are proposed. Plain round well; no cup-rinser nozzle.",
+    "point": [
+      1260,
+      155,
+      1005
+    ],
+    "x": 1260,
+    "y": 155,
+    "diameter": 90
+  },
+  {
+    "id": 8,
+    "tab": "8 Rear holes",
+    "name": "Rear service / parasol holes",
+    "measure": "3 × Ø30",
+    "status": "proposed",
+    "note": "Three rear holes: centre X=660 / 1100 / 1540, Y=896.8. Ø30 is a visual proposal; confirm sizes, locations and use against selected hardware.",
+    "point": [
+      1100,
+      896.8,
+      1005
+    ],
+    "x": [
+      660,
+      1100,
+      1540
+    ],
+    "y": 896.8,
+    "diameter": 30
+  },
+  {
+    "id": 12,
+    "tab": "Wood rail",
+    "name": "Retained walnut rear rail",
+    "measure": "50 × 25",
+    "status": "proposed",
+    "note": "Retains the original walnut rear armrest below the stainless serving ledge. Section 50 × 25 mm, about 80 mm projection and short end returns are proposed.",
+    "point": [
+      914.4,
+      1121.8,
+      1000
+    ]
+  },
+  {
+    "id": 13,
+    "tab": "Wood wing",
+    "name": "Left walnut folding wing",
+    "measure": "300 × 420",
+    "status": "proposed",
+    "note": "Retains the original left folding wood wing, shown stowed beneath the new ledge. Proposed deployed projection 300 mm, depth 420 mm. Confirm hardware, deployed position and clearances.",
+    "point": [
+      -25,
+      210,
+      825
+    ]
+  },
+  {
+    "id": 14,
+    "tab": "LED logo",
+    "name": "Studio Roast · white LED logo",
+    "measure": "900 × 700 max",
+    "status": "proposed",
+    "point": [
+      914.4,
+      1086.8,
+      680
+    ],
+    "note": "The updated SR monogram, coffee branch and STUDIO ROAST name appear in white LED light on the customer rear. Artwork is fitted proportionally within a proposed 900 W × 700 H mm area, centred at 600 mm above floor. Confirm final size, mounting, minimum stroke sizes, driver and concealed wiring with the factory."
+  },
+  {
+    "id": 15,
+    "tab": "Wood engraving",
+    "name": "Logo engraved into walnut",
+    "measure": "210 × 145 max",
+    "status": "proposed",
+    "point": [
+      405,
+      -3.6,
+      867.5
+    ],
+    "note": "Engrave the same updated SR / coffee-branch / STUDIO ROAST artwork directly into the operator-facing walnut fascia. Keep the existing wood panel. Proposed artwork fits proportionally within 210 W × 145 H mm, centred on the 750 × 175 mm fascia. Factory to confirm scale, engraving depth, fine-line legibility and clear finish."
+  }
+];
+
+const review = [
+  "Material: the source offers 201 / 304 stainless steel; the final grade has not been selected. Quote and confirm.",
+  "Sheet gauges: source options are 1.2 / 2.0 / 3.0 mm, unassigned to parts. Model edge build-up does not specify sheet gauge.",
+  "Confirm the proposed 150 mm guard height, ledge elevation, corner radii, edge returns, welds and brackets; verify serving loads.",
+  "Verify final cutouts, corner radii, flanges, seals, removal space and plumbing against the actual sink and knockbox.",
+  "Check cabinet modules, hinges, cup dispensers, equipment clearance and the folding wing against the new ledge.",
+  "Confirm caster size, brakes, total load, frame stability, transport conditions and manufacturing tolerances. Submit final shop drawings for owner approval.",
+  "Confirm LED logo scale, minimum stroke sizes, standoffs, driver, wiring and service access. Confirm engraving depth, fine-line detail, artwork position and finish on the walnut fascia."
+];
+// The current owner-supplied logo is used twice: white rear LED and recessed
+// dark engraving on the existing operator-facing walnut fascia.
+function createBrandRenderer(gl,convert,onReady){
+ const vs='attribute vec3 aBrandPosition;attribute vec2 aBrandUV;uniform mat4 uBrandMVP;varying vec2 vUV;void main(){vUV=aBrandUV;gl_Position=uBrandMVP*vec4(aBrandPosition,1.0);}';
+ const fs='precision mediump float;uniform sampler2D uBrand;uniform float uEngraved;varying vec2 vUV;void main(){float alpha=texture2D(uBrand,vUV).a;if(uEngraved>.5){float cut=smoothstep(.88,.98,alpha);float nearby=smoothstep(.88,.98,texture2D(uBrand,vUV+vec2(.0015,-.0015)).a);float bevel=max(cut-nearby,0.0);if(cut<.01)discard;vec3 c=mix(vec3(.075,.029,.010),vec3(.58,.31,.13),bevel*.8);gl_FragColor=vec4(c,cut*.92);}else{if(alpha<.01)discard;gl_FragColor=vec4(vec3(1.0),pow(alpha,3.0));}}';
+ function shader(type,src){const s=gl.createShader(type);gl.shaderSource(s,src);gl.compileShader(s);if(!gl.getShaderParameter(s,gl.COMPILE_STATUS))throw Error(gl.getShaderInfoLog(s));return s;}
+ const program=gl.createProgram();gl.attachShader(program,shader(gl.VERTEX_SHADER,vs));gl.attachShader(program,shader(gl.FRAGMENT_SHADER,fs));gl.linkProgram(program);if(!gl.getProgramParameter(program,gl.LINK_STATUS))throw Error(gl.getProgramInfoLog(program));
+ const texture=gl.createTexture();gl.bindTexture(gl.TEXTURE_2D,texture);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,1,1,0,gl.RGBA,gl.UNSIGNED_BYTE,new Uint8Array([255,255,255,0]));for(const key of [gl.TEXTURE_WRAP_S,gl.TEXTURE_WRAP_T])gl.texParameteri(gl.TEXTURE_2D,key,gl.CLAMP_TO_EDGE);for(const key of [gl.TEXTURE_MIN_FILTER,gl.TEXTURE_MAG_FILTER])gl.texParameteri(gl.TEXTURE_2D,key,gl.LINEAR);
+ const meshes=[];
+ function panel(cx,y,cz,w,h,rear){const positions=rear?[[cx+w/2,y,cz-h/2],[cx-w/2,y,cz-h/2],[cx-w/2,y,cz+h/2],[cx+w/2,y,cz+h/2]]:[[cx-w/2,y,cz-h/2],[cx+w/2,y,cz-h/2],[cx+w/2,y,cz+h/2],[cx-w/2,y,cz+h/2]];const uv=[[0,0],[1,0],[1,1],[0,1]],data=[];for(const i of [0,1,2,0,2,3])data.push(...convert(positions[i]),...uv[i]);const buffer=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,buffer);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array(data),gl.STATIC_DRAW);meshes.push({buffer,engraved:rear?0:1});}
+ const image=new Image();image.onload=()=>{gl.bindTexture(gl.TEXTURE_2D,texture);gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL,true);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,image);const aspect=image.width/image.height;const rearW=Math.min(900,700*aspect),frontW=Math.min(210,145*aspect);panel(914.4,1086.8,600,rearW,rearW/aspect,true);panel(405,-3.6,867.5,frontW,frontW/aspect,false);onReady();};image.src='assets/studio-roast-logo-led-v2.png';
+ return mvp=>{if(!meshes.length)return;gl.useProgram(program);gl.uniformMatrix4fv(gl.getUniformLocation(program,'uBrandMVP'),false,mvp);gl.activeTexture(gl.TEXTURE0);gl.bindTexture(gl.TEXTURE_2D,texture);gl.uniform1i(gl.getUniformLocation(program,'uBrand'),0);gl.enable(gl.BLEND);gl.blendFunc(gl.SRC_ALPHA,gl.ONE_MINUS_SRC_ALPHA);gl.depthMask(false);for(const mesh of meshes){gl.bindBuffer(gl.ARRAY_BUFFER,mesh.buffer);for(const [name,size,offset] of [['aBrandPosition',3,0],['aBrandUV',2,12]]){const loc=gl.getAttribLocation(program,name);gl.enableVertexAttribArray(loc);gl.vertexAttribPointer(loc,size,gl.FLOAT,false,20,offset);}gl.uniform1f(gl.getUniformLocation(program,'uEngraved'),mesh.engraved);gl.drawArrays(gl.TRIANGLES,0,6);}gl.depthMask(true);gl.disable(gl.BLEND);};
+}
+
+
+// One shared millimetre-based model for every view. No remote dependencies.
+function createCart(canvas, onFrame = () => {}) {
+  const gl=canvas.getContext('webgl',{alpha:true,antialias:true,preserveDrawingBuffer:true});
+  if(!gl) throw new Error('WebGL unavailable');
+  const vs=`attribute vec3 aPosition;attribute vec3 aNormal;attribute float aMaterial;attribute float aGroup;uniform mat4 uMVP;varying vec3 vP;varying vec3 vN;varying float vM;varying float vG;void main(){vP=aPosition;vN=aNormal;vM=aMaterial;vG=aGroup;gl_Position=uMVP*vec4(aPosition,1.0);}`;
+  const fs=`precision highp float;varying vec3 vP;varying vec3 vN;varying float vM;varying float vG;uniform vec3 uEye;uniform float uSelected;uniform float uHideLedge;void main(){if(uHideLedge>.5 && vG>9.5 && vG<11.5)discard;vec3 n=normalize(vN);vec3 v=normalize(uEye-vP);vec3 l=normalize(vec3(-.5,1.0,.8));float d=max(dot(n,l),0.0);vec3 r=reflect(-v,n);vec3 color;if(vM<.5){float band1=pow(max(0.0,1.0-abs(r.x+.22)*1.35),7.0);float band2=pow(max(0.0,1.0-abs(r.x-.65)*2.5),9.0);float env=.42+.24*(r.y*.5+.5)+.25*band1+.13*band2;float grain=sin(vP.y*5.1+vP.x*.01)*.004;color=vec3(.87,.90,.92)*(env+grain)+vec3(.14)*d;}else if(vM<1.5){float grain=sin(vP.z*.17+sin(vP.x*.012)*1.7+sin(vP.z*.051)*2.0)*.5+.5;grain+=sin(vP.z*.81+vP.x*.013)*.11;color=mix(vec3(.23,.105,.050),vec3(.45,.245,.125),grain*.65+.18)*(.65+.47*d);color+=pow(max(dot(reflect(-l,n),v),0.0),25.0)*.12;}else if(vM<2.5){color=vec3(.055,.060,.063)*(.55+.7*d);}else{color=vec3(.025,.034,.041)*(.7+.3*d);}if(vM<.5)color+=pow(max(dot(reflect(-l,n),v),0.0),42.0)*.40;if(abs(vG-10.0)<.1)color*=.72;if(abs(vG-11.0)<.1)color*=1.12;if(uSelected>.5 && abs(vG-uSelected)<.1)color=mix(color,vec3(.10,.62,.56),.55);gl_FragColor=vec4(color,1.0);}`;
+  function shader(type,src){const s=gl.createShader(type);gl.shaderSource(s,src);gl.compileShader(s);if(!gl.getShaderParameter(s,gl.COMPILE_STATUS))throw Error(gl.getShaderInfoLog(s));return s;}
+  const program=gl.createProgram();gl.attachShader(program,shader(gl.VERTEX_SHADER,vs));gl.attachShader(program,shader(gl.FRAGMENT_SHADER,fs));gl.linkProgram(program);if(!gl.getProgramParameter(program,gl.LINK_STATUS))throw Error(gl.getProgramInfoLog(program));gl.useProgram(program);
+  const data=[]; let group=0;
+  const sub=(a,b)=>a.map((x,i)=>x-b[i]);const cross=(a,b)=>[a[1]*b[2]-a[2]*b[1],a[2]*b[0]-a[0]*b[2],a[0]*b[1]-a[1]*b[0]];
+  const norm=a=>{let d=Math.hypot(...a)||1;return a.map(x=>x/d);};
+  const dot=(a,b)=>a.reduce((t,x,i)=>t+x*b[i],0);
+  const L=1828.8,D=1066.8,P=304.8,R=40;
+  const convert=p=>[p[0]-L/2,p[2]-575,(D+P)/2-p[1]];
+  function tri(a,b,c,m=0){a=convert(a);b=convert(b);c=convert(c);let n=norm(cross(sub(b,a),sub(c,a)));for(let p of [a,b,c])data.push(...p,...n,m,group);}
+  function quad(a,b,c,d,m=0){tri(a,b,c,m);tri(a,c,d,m);}
+  function box(x,y,z,w,d,h,m=0){let a=[x,y,z],b=[x+w,y,z],c=[x+w,y+d,z],e=[x,y+d,z],f=[x,y,z+h],g=[x+w,y,z+h],j=[x+w,y+d,z+h],k=[x,y+d,z+h];quad(f,g,j,k,m);quad(e,c,b,a,m);quad(a,b,g,f,m);quad(b,c,j,g,m);quad(c,e,k,j,m);quad(e,a,f,k,m);}
+  function beam(a,b,r=6,m=0,n=10){let axis=norm(sub(b,a)),ref=Math.abs(axis[2])<.8?[0,0,1]:[0,1,0],u=norm(cross(axis,ref)),v=cross(axis,u);let ring=(p,t)=>p.map((q,j)=>q+r*(u[j]*Math.cos(t)+v[j]*Math.sin(t)));for(let i=0;i<n;i++){let t=i*2*Math.PI/n,t2=(i+1)*2*Math.PI/n;quad(ring(a,t),ring(a,t2),ring(b,t2),ring(b,t),m);tri(a,ring(a,t2),ring(a,t),m);tri(b,ring(b,t),ring(b,t2),m);}}
+  function disc(x,y,z,r,axis='z',m=3,n=48){const pt=t=>axis==='z'?[x+r*Math.cos(t),y+r*Math.sin(t),z]:[x+r*Math.cos(t),y,z+r*Math.sin(t)];for(let i=0;i<n;i++)tri([x,y,z],pt(i*2*Math.PI/n),pt((i+1)*2*Math.PI/n),m);}
+  function ring(x,y,z,ro,ri,axis='z',m=0,n=48){const pt=(t,r)=>axis==='z'?[x+r*Math.cos(t),y+r*Math.sin(t),z]:[x+r*Math.cos(t),y,z+r*Math.sin(t)];for(let i=0;i<n;i++){let a=i*2*Math.PI/n,b=(i+1)*2*Math.PI/n;quad(pt(a,ro),pt(b,ro),pt(b,ri),pt(a,ri),m);}}
+  function strip(path,width,z,h,m=0){let left=[],right=[];for(let i=0;i<path.length;i++){let a=path[Math.max(i-1,0)],b=path[Math.min(i+1,path.length-1)],dx=b[0]-a[0],dy=b[1]-a[1],len=Math.hypot(dx,dy);left.push([path[i][0]-dy/len*width/2,path[i][1]+dx/len*width/2]);right.push([path[i][0]+dy/len*width/2,path[i][1]-dx/len*width/2]);}let p=(q,h)=>[q[0],q[1],h];for(let i=0;i<path.length-1;i++){quad(p(left[i],z+h),p(right[i],z+h),p(right[i+1],z+h),p(left[i+1],z+h),m);quad(p(left[i],z),p(left[i],z+h),p(left[i+1],z+h),p(left[i+1],z),m);quad(p(right[i+1],z),p(right[i+1],z+h),p(right[i],z+h),p(right[i],z),m);}for(let i of [0,path.length-1])quad(p(left[i],z),p(right[i],z),p(right[i],z+h),p(left[i],z+h),m);}
+  // Revision C: 72 x 42 inch body; proposed modules 580 / 220 / 520 / 508.8 mm.
+  box(0,0,100,L,D,30);box(0,D-18,130,L,18,845);box(0,20,130,18,D-38,845);box(L-18,20,130,18,D-38,845);
+  for(let x of [10,L-35])for(let y of [12,D-45])box(x,y,100,25,30,875);
+  box(800,25,130,20,D-65,845);box(1300,25,130,20,D-65,845);box(820,25,130,480,D-65,20);box(820,D-63,150,480,5,805);box(820,0,955,480,25,20);
+  box(30,0,130,260,20,635);box(300,0,130,265,20,635);box(30,-3,780,750,25,175,1);
+  box(590,0,130,195,20,635);box(605,-2,130,165,20,225);
+  for(let z of [635,470]){disc(690,-3,z,52,'y',3);ring(690,-7,z,59,45,'y',0);ring(690,-8,z,46,41,'y',0);for(let a of [-2.5,-1.57,-.65]){let p=[690+40*Math.cos(a),-10,z+40*Math.sin(a)],q=[690+12*Math.cos(a),-10,z+12*Math.sin(a)];beam(p,q,2.7);}}
+  // Upper service fascia and lower sink-base door; owner supplies sink.
+  box(1340,0,545,L-1370,20,410);box(1340,0,130,L-1370,20,405);
+  box(1360,-3,504,L-1410,8,12,2);box(1360,-7,513,L-1410,8,5);
+  // Counter split into four pieces so the 254 x 355.6 sink is a real opening.
+  const sink={x:1370,y:220,l:254,w:355.6,installed:false};
+  box(0,0,975,sink.x,D,25);box(sink.x+sink.l,0,975,L-sink.x-sink.l,D,25);
+  box(sink.x,0,975,sink.l,sink.y,25);box(sink.x,sink.y+sink.w,975,sink.l,D-sink.y-sink.w,25);
+  function inset(x,y,w,d,mode='well'){
+    box(x-3,y-3,1000.2,w+6,d+6,1.0);box(x,y,1001.5,w,d,.7,mode==='tray'?0:3);
+    if(mode==='tray')for(let q=y+12;q<y+d-5;q+=26)box(x+6,q,1003,w-12,4,2);
+  }
+  // Removed features 3, 4, 5 and 7. Feature 6 is the front-left knockbox.
+  group=6; inset(90,90,138,150);beam([96,165,1008],[222,165,1008],9,2,16);
+  group=1; inset(1210,270,100,230);
+  group=2; disc(1260,155,1001.5,45);ring(1260,155,1002,50,45);
+  group=8; for(let x of [660,1100,1540]){disc(x,D-170,1001.5,15);ring(x,D-170,1002,17,15);}
+  // Feature 9 is a through-cutout only. No bowl, basin walls, bottom or drain.
+  // The dark plane is the cabinet base far below the opening.
+  group=9; box(1325,25,130.2,L-1350,D-50,.5,3);
+  // Full side guard: steel along rear plus BOTH ENTIRE ends, operator edge open.
+  group=10; let guard=[[0,25],[0,D-R]];
+  for(let i=1;i<=16;i++){let a=Math.PI-i*Math.PI/32;guard.push([R+R*Math.cos(a),D-R+R*Math.sin(a)]);}
+  guard.push([L-R,D]);for(let i=1;i<=16;i++){let a=Math.PI/2-i*Math.PI/32;guard.push([L-R+R*Math.cos(a),D-R+R*Math.sin(a)]);}guard.push([L,25]);
+  strip(guard,3,1000,150);strip(guard,10,1145,5);
+  // 12-inch outward serving shelf at guard top; open along operator edge.
+  group=11; const rc=R+P/2;
+  let serving=[[-P/2,25],[-P/2,D-R]];
+  for(let i=1;i<=24;i++){let a=Math.PI-i*Math.PI/48;serving.push([R+rc*Math.cos(a),D-R+rc*Math.sin(a)]);}
+  serving.push([L-R,D+P/2]);for(let i=1;i<=24;i++){let a=Math.PI/2-i*Math.PI/48;serving.push([L-R+rc*Math.cos(a),D-R+rc*Math.sin(a)]);}serving.push([L+P/2,25]);
+  strip(serving,P,1130,20);
+  for(let x of [150,L/2,L-150])beam([x,D,1020],[x,D+P-25,1125],7);
+  for(let y of [200,D-220]){beam([0,y,1020],[-P+25,y,1125],7);beam([L,y,1020],[L+P-25,y,1125],7);}
+  group=12; let rail=[[-55,D-250],[-55,D]];
+  for(let i=1;i<=20;i++){let a=Math.PI-i*Math.PI/40;rail.push([55*Math.cos(a),D+55*Math.sin(a)]);}
+  rail.push([L,D+55]);for(let i=1;i<=20;i++){let a=Math.PI/2-i*Math.PI/40;rail.push([L+55*Math.cos(a),D+55*Math.sin(a)]);}rail.push([L+55,D-250]);strip(rail,50,975,25,1);
+  for(let x of [140,L/2,L-140]){box(x,D,865,18,8,105);beam([x+9,D+8,870],[x+9,D+55,972],5);}
+  // Original walnut folding wing stowed against left end under serving shelf.
+  group=13; box(-25,0,675,25,420,300,1);beam([-28,0,975],[-28,420,975],5);
+  for(let y of [45,365])beam([-34,y,710],[-34,y,960],5);
+  // Four swivel casters, including forks and hubs.
+  group=0; for(let x of [55,L-55])for(let y of [55,D-55]){beam([x,y,70],[x,y,101],14);box(x-20,y-22,95,40,44,5);beam([x,y-19,35],[x,y-19,78],7);beam([x,y+19,35],[x,y+19,78],7);beam([x,y-13,35],[x,y+13,35],35,2,36);disc(x,y-13.5,35,15,'y',0);disc(x,y+13.5,35,15,'y',0);}
+
+  const buffer=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,buffer);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array(data),gl.STATIC_DRAW);
+  function bindCart(){gl.useProgram(program);gl.bindBuffer(gl.ARRAY_BUFFER,buffer);for(const [name,size,offset] of [['aPosition',3,0],['aNormal',3,12],['aMaterial',1,24],['aGroup',1,28]]){const loc=gl.getAttribLocation(program,name);gl.enableVertexAttribArray(loc);gl.vertexAttribPointer(loc,size,gl.FLOAT,false,32,offset);}}
+
+  const locM=gl.getUniformLocation(program,'uMVP'),locE=gl.getUniformLocation(program,'uEye'),locS=gl.getUniformLocation(program,'uSelected'),locH=gl.getUniformLocation(program,'uHideLedge');
+  gl.enable(gl.DEPTH_TEST);gl.disable(gl.CULL_FACE);gl.clearColor(0,0,0,0);
+  function mul(a,b){const o=new Float32Array(16);for(let i=0;i<4;i++)for(let j=0;j<4;j++)for(let k=0;k<4;k++)o[j*4+i]+=a[k*4+i]*b[j*4+k];return o;}
+  function lookAt(e,t){const z=norm(sub(e,t)),x=norm(cross([0,1,0],z)),y=cross(z,x);return new Float32Array([x[0],y[0],z[0],0,x[1],y[1],z[1],0,x[2],y[2],z[2],0,-dot(x,e),-dot(y,e),-dot(z,e),1]);}
+  function ortho(l,r,b,t,n,f){return new Float32Array([2/(r-l),0,0,0,0,2/(t-b),0,0,0,0,-2/(f-n),0,-(r+l)/(r-l),-(t+b)/(t-b),-(f+n)/(f-n),1]);}
+  const transform=(m,p)=>[0,1,2,3].map(i=>m[i]*p[0]+m[4+i]*p[1]+m[8+i]*p[2]+m[12+i]);
+  let yaw=-.56,pitch=.40,zoom=1,focus=null,selected=0,hide=false,running=false,last=0,raf=0,mvp;
+  const corners=[];for(const x of [-P-130,L+P+180])for(const y of [-130,D+P+150])for(const z of [0,1250])corners.push(convert([x,y,z]));
+  function draw(){const dpr=Math.min(devicePixelRatio||1,2),w=canvas.clientWidth,h=canvas.clientHeight;if(!w||!h)return;if(canvas.width!==Math.round(w*dpr)||canvas.height!==Math.round(h*dpr)){canvas.width=Math.round(w*dpr);canvas.height=Math.round(h*dpr);}gl.viewport(0,0,canvas.width,canvas.height);gl.clear(gl.COLOR_BUFFER_BIT|gl.DEPTH_BUFFER_BIT);const target=focus?convert([405,0,867.5]):[0,0,0];const eye=[Math.sin(yaw)*Math.cos(pitch)*4000,Math.sin(pitch)*4000,Math.cos(yaw)*Math.cos(pitch)*4000].map((v,i)=>v+target[i]),view=lookAt(eye,target);let mx=0,my=0;const fitCorners=focus?[[0,-30,750],[810,-30,750],[0,140,1000],[810,140,1000]].map(convert):corners;for(const p of fitCorners){const q=transform(view,p);mx=Math.max(mx,Math.abs(q[0]));my=Math.max(my,Math.abs(q[1]));}let width=Math.max(mx*2,my*2*w/h)*1.08/zoom,height=width*h/w;mvp=mul(ortho(-width/2,width/2,-height/2,height/2,1,9000),view);bindCart();gl.uniformMatrix4fv(locM,false,mvp);gl.uniform3fv(locE,eye);gl.uniform1f(locS,selected);gl.uniform1f(locH,hide?1:0);gl.drawArrays(gl.TRIANGLES,0,data.length/8);renderLED(mvp);onFrame({yaw,pitch,zoom,running,focus});}
+  const renderLED=createBrandRenderer(gl,convert,draw);
+  function project(p){if(!mvp)return [0,0];const q=transform(mvp,convert(p));return[(q[0]/q[3]+1)*canvas.clientWidth/2,(1-q[1]/q[3])*canvas.clientHeight/2];}
+  function animate(t){if(!running)return;const dt=last?Math.min(t-last,40):0;last=t;yaw+=dt*.00022;draw();raf=requestAnimationFrame(animate);}
+  function stop(){running=false;last=0;cancelAnimationFrame(raf);draw();}
+  let drag=null;
+  canvas.addEventListener('pointerdown',e=>{stop();drag={x:e.clientX,y:e.clientY,yaw,pitch};canvas.setPointerCapture(e.pointerId);});
+  canvas.addEventListener('pointermove',e=>{if(!drag)return;yaw=drag.yaw-(e.clientX-drag.x)*.009;pitch=Math.max(.02,Math.min(1.565,drag.pitch+(e.clientY-drag.y)*.007));draw();});
+  canvas.addEventListener('pointerup',()=>{drag=null;});canvas.addEventListener('pointercancel',()=>{drag=null;});
+  canvas.addEventListener('wheel',e=>{e.preventDefault();zoom=Math.max(.65,Math.min(1.8,zoom-e.deltaY*.0006));draw();},{passive:false});
+  canvas.addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','+','-','0'].includes(e.key)){e.preventDefault();stop();if(e.key==='ArrowLeft')yaw-=.15;if(e.key==='ArrowRight')yaw+=.15;if(e.key==='ArrowUp')pitch=Math.min(1.565,pitch+.1);if(e.key==='ArrowDown')pitch=Math.max(.02,pitch-.1);if(e.key==='+')zoom=Math.min(1.8,zoom+.1);if(e.key==='-')zoom=Math.max(.65,zoom-.1);if(e.key==='0')zoom=1;draw();}});
+  const observer=new ResizeObserver(draw);observer.observe(canvas);
+  return {draw,project,canvas,vertexCount:data.length/8,
+    view(name){stop();focus=null;const views={iso:[-.56,.40],front:[0,.12],rear:[Math.PI,.28],left:[-Math.PI/2,.30],right:[Math.PI/2,.30],top:[0,1.565]};[yaw,pitch]=views[name]||views.iso;zoom=1;draw();},
+    focusEngraving(){stop();focus='engraving';yaw=0;pitch=.03;zoom=1;draw();},
+    restore(s){if([s.yaw,s.pitch,s.zoom].every(Number.isFinite)){yaw=s.yaw;pitch=Math.max(.02,Math.min(1.565,s.pitch));zoom=Math.max(.65,Math.min(1.8,s.zoom));draw();}},
+    highlight(id){selected=Number(id)||0;draw();},
+    hideLedge(v){hide=v;draw();},
+    fit(){zoom=1;draw();},
+    zoom(v){zoom=Math.max(.65,Math.min(1.8,zoom+v));draw();},
+    spin(){if(running)stop();else{running=true;last=0;raf=requestAnimationFrame(animate);}return running;},
+    stop, getState:()=>({yaw,pitch,zoom,running,hide,selected,focus})
+  };
+}
+
+
+
+const $=s=>document.querySelector(s), $=s=>[...document.querySelectorAll(s)];
+const params=new URLSearchParams(location.search);
+let lang='en',selected=Number(params.get('part'))||11,view=params.get('view')||'iso';
+if(!parts.some(p=>p.id===selected))selected=11;
+if(!['iso','front','rear','left','right','top'].includes(view))view='iso';
+let model,showDimensions=true,frame={},toastTimer;
+const tr=value=>Array.isArray(value)?value[lang==='en'?1:0]:value;
+const t=key=>tr(copy[key]||[key,key]);
+function notify(message){$('#announcement').textContent=message;clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('#announcement').textContent='',4000);}
+function setPart(id){selected=Number(id);model?.highlight(selected);renderPart();renderPlan();syncURL();}
+function setView(name){view=name;model?.view(name);$('[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===name));updateSpin();syncURL();}
+function syncURL(){const q=new URLSearchParams({lang,view,part:String(selected)});history.replaceState(null,'',`${location.pathname}?${q}${location.hash}`);}
+function badge(status){return `<span class="badge ${status==='proposed'?'proposed':''}">${t(status)}</span>`;}
+function renderPart(){const p=parts.find(p=>p.id===selected);$('#part-tabs').innerHTML=parts.map(part=>`<button type="button" data-part="${part.id}" class="${selected===part.id?'active':''}" aria-pressed="${selected===part.id}">${tr(part.tab)}</button>`).join('');$('#part-detail').innerHTML=`<div class="part-number">${t('part')} / ${String(p.id).padStart(2,'0')}</div><h3>${tr(p.name)}</h3><p class="part-measure">${p.measure}<small> mm</small></p>${badge(p.status)}<p class="part-note">${tr(p.note)}</p>${selected===14?'<button type="button" id="rear-sign-view" class="text-link">View customer rear ↗</button><p class="small muted"><a href="assets/studio-roast-logo-original-v2.jpeg" target="_blank" rel="noopener">Supplied logo reference ↗</a></p>':selected===15?'<button type="button" id="engraving-view" class="text-link">Inspect engraving up close ↗</button>':''}`;$('#part-top').hidden=![1,2,6,8,9].includes(selected);renderHotspots();}
+function renderSchedule(){const order=[6,1,2,8,9];$('#cutout-list').innerHTML=order.map(id=>{const p=parts.find(p=>p.id===id);return `<div class="cutout-row"><span class="cutout-id">${id}</span><div><button data-inspect="${id}" type="button"><strong>${tr(p.tab)}</strong></button><span class="row-dims">${p.measure} mm</span><p>${t('location')}: X=${Array.isArray(p.x)?p.x.join(' / '):p.x}, Y=${p.y} · ${lang==='zh'?'定位待确认':'Position proposed'}</p><p>${p.status==='confirmed'?(lang==='zh'?'开口尺寸：客户指定':'Opening size: client specified'):(lang==='zh'?'开口尺寸：方案待确认':'Opening size: proposed')}</p></div></div>`;}).join('');$('#dimension-table tbody').innerHTML=dimensions.map(([name,measure,status,note])=>`<tr><td>${tr(name)}</td><td>${measure}<span class="table-note">${tr(note)}</span></td><td>${badge(status)}</td></tr>`).join('');}
+function renderText(){document.documentElement.lang=lang==='zh'?'zh-CN':'en';document.title=lang==='zh'?'咖啡推车 · Coffee Cart | Revision D':'Coffee Cart · 3D Manufacturer Guide | Revision D';$('[data-i18n]').forEach(el=>el.innerHTML=t(el.dataset.i18n));$('#cart').setAttribute('aria-label',lang==='zh'?'可旋转咖啡推车模型。方向键旋转，加减键缩放。':'Rotatable coffee cart. Arrow keys rotate; plus and minus zoom.');$('#intent-list').innerHTML=intent.map(v=>`<li>${tr(v)}</li>`).join('');$('#review-list').innerHTML=review.map(v=>`<li>${tr(v)}</li>`).join('');renderPart();renderSchedule();renderPlan();updateSpin();drawAnnotations();}
+
+// Dimensioned orthographic plan. Coordinates match the shared 3D model exactly.
+function renderPlan(){const L=1828.8,D=1066.8,P=304.8;
+ const txt=(x,y,text,extra='')=>`<text x="${x}" y="${y}" ${extra}>${text}</text>`;
+ const line=(x1,y1,x2,y2,cls='')=>`<path d="M${x1},${y1} L${x2},${y2}" class="${cls}"/>`;
+ const dim=(x1,y1,x2,y2,text,vertical=false)=>`<g stroke="#78988b" stroke-width="2" fill="none">${line(x1,y1,x2,y2)}${vertical?line(x1-12,y1-12,x1+12,y1+12)+line(x2-12,y2-12,x2+12,y2+12):line(x1-12,y1+12,x1+12,y1-12)+line(x2-12,y2+12,x2+12,y2-12)}</g>${vertical?txt(x1+50,(y1+y2)/2,text,`transform="rotate(90 ${x1+50} ${(y1+y2)/2})" text-anchor="middle"`):txt((x1+x2)/2,y1-22,text,'text-anchor="middle"')}`;
+ const shape=(id,child)=>`<g class="plan-feature ${selected===id?'selected':''}" data-plan="${id}" tabindex="0" role="button" aria-label="${tr(parts.find(p=>p.id===id).name)}">${child}</g>`;
+ const rect=(p,fill='#bac8c0')=>`<rect class="feature-shape" x="${p.x}" y="${D-p.y-p.d}" width="${p.l}" height="${p.d}" fill="${fill}" stroke="#426558" stroke-width="3" rx="3"/>`;
+ const number=(x,y,id,white=false)=>`<circle cx="${x}" cy="${y}" r="34" fill="${white?'#edf5ed':'#234d42'}"/>${txt(x,y+12,id,`text-anchor="middle" fill="${white?'#234d42':'white'}" font-size="34"`)}`;
+ let feature='';for(const id of [6,1,9]){const p=parts.find(p=>p.id===id),cx=p.x+p.l/2,cy=D-p.y-p.d/2;feature+=shape(id,rect(p,id===9?'#e5ece5':'#aab9af')+number(cx,cy-10,id)+txt(cx,cy+61,`${p.measure}`,`font-size="${id===9?27:24}" text-anchor="middle" fill="#2e5548"`));}
+ const p2=parts.find(p=>p.id===2);feature+=shape(2,`<circle class="feature-shape" cx="${p2.x}" cy="${D-p2.y}" r="45" fill="#aab9af" stroke="#426558" stroke-width="3"/>`+number(p2.x,D-p2.y,2));
+ const p8=parts.find(p=>p.id===8);feature+=shape(8,p8.x.map(x=>`<circle class="feature-shape" cx="${x}" cy="${D-p8.y}" r="15" fill="#557969"/>`).join('')+number(1100,100,8));
+ const shelfPath='M-304.8 1041.8 L-304.8 40 A344.8 344.8 0 0 1 40 -304.8 L1788.8 -304.8 A344.8 344.8 0 0 1 2133.6 40 L2133.6 1041.8 L1828.8 1041.8 L1828.8 40 A40 40 0 0 0 1788.8 0 L40 0 A40 40 0 0 0 0 40 L0 1041.8 Z';
+ $('#top-plan').innerHTML=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="-540 -560 2990 2050" role="img" aria-label="${t('topPlan')}" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="36" fill="#496a58"><defs><pattern id="plan-grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M100 0H0V100" fill="none" stroke="#f1f4ee" stroke-width="2"/></pattern></defs><rect x="-500" y="-520" width="2900" height="1950" fill="url(#plan-grid)"/><rect x="0" y="0" width="${L}" height="${D}" fill="#f6f8f2" stroke="#526f5b" stroke-width="4" rx="6"/>${shape(11,`<path class="feature-shape" d="${shelfPath}" fill="#d8e3d3" stroke="#7a9678" stroke-width="3"/>`)}<path d="M0 1041.8V40Q0 0 40 0H1788.8Q1828.8 0 1828.8 40V1041.8" fill="none" stroke="#375c4c" stroke-width="8"/>${feature}${txt(L/2,-156,`${t('rearSide')} · 304.8 mm`, 'text-anchor="middle" font-size="34"')}${txt(L/2,D+85,t('frontOpen'),'text-anchor="middle" font-size="34" fill="#327364"')}${txt(1497,D-220-355.6-44,`${lang==='zh'?'9 水槽开口':'9 SINK OPENING'} · 254 × 355.6 mm`,'text-anchor="middle" font-size="31"')}${txt(159,D-90+80,'138 × 150 mm','text-anchor="middle" font-size="30"')}${dim(-P,-410,L+P,-410,'2438.4 mm')}${dim(0,D+225,L,D+225,'1828.8 mm')}${dim(-420,0,-420,D,'1066.8 mm',true)}${dim(2270,-P,2270,D,'1371.6 mm',true)}<g stroke="#8da18b" stroke-width="2" fill="none">${line(-P,-330,-P,-445)}${line(L+P,-330,L+P,-445)}${line(0,D+130,0,D+255)}${line(L,D+130,L,D+255)}${line(-345,0,-450,0)}${line(-345,D,-450,D)}${line(2160,-P,2300,-P)}${line(2160,D,2300,D)}</g><circle cx="0" cy="${D}" r="10" fill="#466c55"/>${txt(-55,D+68,'O','font-size="32"')}<path d="M0 ${D}h170m-15 -12l15 12-15 12 M0 ${D}v-170m-12 15l12-15 12 15" stroke="#587d64" stroke-width="3" fill="none"/>${txt(160,D-25,'X','font-size="30"')}${txt(23,D-160,'Y','font-size="30"')}${txt(0,1430,t('removed'),'font-size="28" fill="#879280"')}</svg>`;
+}
+
+function renderHotspots(){const ids=[6,9];$('#hotspots').innerHTML=ids.map(id=>`<button type="button" class="hotspot ${selected===id?'active':''}" data-hotspot="${id}" aria-label="${tr(parts.find(p=>p.id===id).name)}">${id}</button>`).join('');positionHotspots();}
+function positionHotspots(){if(!model)return;const front=Math.cos(frame.yaw??-.56)>-.25;$('[data-hotspot]').forEach(el=>{const p=parts.find(p=>p.id===Number(el.dataset.hotspot));const [x,y]=model.project(p.point);el.style.left=x+'px';el.style.top=y+'px';el.hidden=!front;});}
+function drawAnnotations(){if(!model)return;const svg=$('#annotations'),w=$('#cart').clientWidth,h=$('#cart').clientHeight;svg.setAttribute('viewBox',`0 0 ${w} ${h}`);svg.innerHTML='';if(!showDimensions)return;
+ const isTop=(frame.pitch||0)>1.4;
+ const label=(a,b,text,proposed=false,offset=0)=>{const p=model.project(a),q=model.project(b),dx=q[0]-p[0],dy=q[1]-p[1],len=Math.hypot(dx,dy);if(len<35)return '';const nx=-dy/len*4,ny=dx/len*4;let mx=(p[0]+q[0])/2,my=(p[1]+q[1])/2-7+offset;mx=Math.max(45,Math.min(w-45,mx));my=Math.max(16,Math.min(h-40,my));return `<g><path class="dimension-line ${proposed?'dimension-proposed':''}" d="M${p[0]} ${p[1]}L${q[0]} ${q[1]} M${p[0]-nx} ${p[1]-ny}l${nx*2} ${ny*2} M${q[0]-nx} ${q[1]-ny}l${nx*2} ${ny*2}"/><text class="dimension-label ${proposed?'proposed-label':''}" x="${mx}" y="${my}" text-anchor="middle">${text}</text></g>`;};
+ if(frame.focus){svg.innerHTML=label([300,-12,960],[510,-12,960],'Engraving: 210 × 145 mm max · PROPOSED',true);return;}
+ let str=label([0,-85,1000],[1828.8,-85,1000],`${t('bodyLabel')} 1828.8 mm`)+label([-304.8,1490,1150],[2133.6,1490,1150],`${t('overallLabel')} 2438.4 mm`)+label([2275,0,1150],[2275,1371.6,1150],'1371.6 mm');
+ if(!isTop)str+=label([2240,-15,0],[2240,-15,1000],`${t('heightLabel')} 1000 mm`);
+ const p=parts.find(p=>p.id===selected);
+ if(selected===11)str+=label([-304.8,650,1150],[0,650,1150],'304.8 mm');
+ if(selected===10)str+=label([0,600,1000],[0,600,1150],`150 mm · ${t('proposedHeight')}`,true);
+ if([1,6,9].includes(selected))str+=label([p.x,p.y+p.d+24,1020],[p.x+p.l,p.y+p.d+24,1020],`${p.measure} mm`,p.status==='proposed',-8);
+ svg.innerHTML=str;
+}
+function updateSpin(){const spin=$('#spin');const running=model?.getState().running||false;spin.setAttribute('aria-pressed',String(running));spin.innerHTML=`<span class="spin-icon">↻</span><span>${t(running?'pause':'spin')}</span>`;}
+
+
+
+try{model=createCart($('#cart'),state=>{frame=state;positionHotspots();drawAnnotations();});model.view(view);model.highlight(selected);}catch(error){console.warn(error.message);$('#webgl-fallback').hidden=false;$('#cart').hidden=true;$('.model-tools button,.viewbar button,.zoom-controls button,.model-tools input').forEach(el=>el.disabled=true);}
+
+$('[data-view]').forEach(button=>button.addEventListener('click',()=>setView(button.dataset.view)));
+$('#part-detail').addEventListener('click',e=>{if(e.target.closest('#rear-sign-view'))setView('rear');if(e.target.closest('#engraving-view')){setView('front');model?.focusEngraving();}});
+$('#part-tabs').addEventListener('click',e=>{const b=e.target.closest('[data-part]');if(b)setPart(b.dataset.part);});
+$('#hotspots').addEventListener('click',e=>{const b=e.target.closest('[data-hotspot]');if(b)setPart(b.dataset.hotspot);});
+$('#cutout-list').addEventListener('click',e=>{const b=e.target.closest('[data-inspect]');if(b){setPart(b.dataset.inspect);setView('top');$('#explore').scrollIntoView({behavior:'smooth'});}});
+function selectPlan(e){const b=e.target.closest('[data-plan]');if(b){setPart(b.dataset.plan);setView('top');$('#explore').scrollIntoView({behavior:'smooth'});}}
+$('#top-plan').addEventListener('click',selectPlan);$('#top-plan').addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();selectPlan(e);}});
+$('#part-top').addEventListener('click',()=>{$('#hide-ledge').checked=true;model?.hideLedge(true);setView('top');});
+$('#dimensions').addEventListener('change',e=>{showDimensions=e.target.checked;drawAnnotations();});
+$('#hide-ledge').addEventListener('change',e=>model?.hideLedge(e.target.checked));
+$('#spin').addEventListener('click',()=>{model?.spin();updateSpin();});
+$('#cart').addEventListener('pointerdown',()=>{updateSpin();$('[data-view]').forEach(b=>b.classList.remove('active'));});
+$('#zoom-in').addEventListener('click',()=>model?.zoom(.12));$('#zoom-out').addEventListener('click',()=>model?.zoom(-.12));$('#fit').addEventListener('click',()=>model?.fit());
+$('#print').addEventListener('click',()=>{model?.stop();updateSpin();window.print();});
+$('#share').addEventListener('click',async()=>{syncURL();if(model){const state=model.getState(),url=new URL(location.href);for(const key of ['yaw','pitch','zoom'])url.searchParams.set(key,state[key].toFixed(4));if(state.focus)url.searchParams.set('focus',state.focus);url.searchParams.set('hide',state.hide?'1':'0');url.searchParams.set('dims',showDimensions?'1':'0');history.replaceState(null,'',url);}try{await navigator.clipboard.writeText(location.href);notify(t('copied'));}catch{notify(t('copyFail'));}});
+$('#save-view').addEventListener('click',()=>{
+  if(!model)return;
+  model.stop();updateSpin();model.draw();
+  const source=$('#cart'),out=document.createElement('canvas');
+  out.width=source.width;out.height=source.height+150;
+  const ctx=out.getContext('2d');ctx.fillStyle='#f7f9f3';ctx.fillRect(0,0,out.width,out.height);ctx.drawImage(source,0,70);
+  const scale=source.width/source.clientWidth;
+  ctx.save();ctx.translate(0,70);ctx.scale(scale,scale);
+  for(const path of $('#annotations path')){ctx.strokeStyle=path.classList.contains('dimension-proposed')?'#b99754':'#609386';ctx.lineWidth=1;ctx.stroke(new Path2D(path.getAttribute('d')));}
+  for(const text of $('#annotations text')){ctx.font='10px Segoe UI, Microsoft YaHei, sans-serif';ctx.textAlign='center';ctx.lineWidth=5;ctx.lineJoin='round';ctx.strokeStyle='#f9fcf7';ctx.fillStyle=text.classList.contains('proposed-label')?'#9b681c':'#426c64';const x=Number(text.getAttribute('x')),y=Number(text.getAttribute('y'));ctx.strokeText(text.textContent,x,y);ctx.fillText(text.textContent,x,y);}
+  ctx.restore();ctx.fillStyle='#163f3c';ctx.font='24px Segoe UI, Microsoft YaHei, sans-serif';ctx.fillText('STUDIO ROAST / REVISION D / mm',30,45);ctx.font='18px Segoe UI, Microsoft YaHei, sans-serif';ctx.fillText(lang==='zh'?'设计意图参考 · 最终加工图及未定尺寸须确认':'Design reference · Final shop drawings and proposed dimensions require confirmation',30,out.height-30);
+  let a=$('#export-ready');if(!a){a=document.createElement('a');a.id='export-ready';a.className='text-link';$('#save-view').after(a);}
+  a.download=`studio-roast-rev-d-${view}.png`;a.href=out.toDataURL('image/png');a.textContent=lang==='zh'?'下载已生成的 PNG ↓':'Download prepared PNG ↓';a.click();notify(t('saved'));
+});
+
+
+renderText();setView(view);
+if(params.get('focus')==='engraving')model?.focusEngraving();
+if(params.has('yaw')&&params.has('pitch')&&params.has('zoom'))model?.restore({yaw:Number(params.get('yaw')),pitch:Number(params.get('pitch')),zoom:Number(params.get('zoom'))});
+if(params.get('hide')==='1'){$('#hide-ledge').checked=true;model?.hideLedge(true);}
+if(params.get('dims')==='0'){$('#dimensions').checked=false;showDimensions=false;drawAnnotations();}
+window.addEventListener('beforeprint',()=>model?.draw());
+window.addEventListener('afterprint',()=>model?.draw());
+</script></body></html>

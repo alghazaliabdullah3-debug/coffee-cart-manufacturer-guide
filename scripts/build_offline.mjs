@@ -1,0 +1,12 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const docs=path.join(root,'docs');
+let html=fs.readFileSync(path.join(docs,'index.html'),'utf8');
+const css=fs.readFileSync(path.join(docs,'style.css'),'utf8');
+const js=['content.js','branding.js','model.js','app.js'].map(name=>fs.readFileSync(path.join(docs,name),'utf8').replace(/^import .*?;\s*$/gm,'').replace(/^export /gm,'')).join('\n');
+html=html.replace('<link rel="stylesheet" href="style.css">',`<style>${css}</style>`).replace('<script type="module" src="app.js"></script>','').replace('</body>',`<script type="module">${js.replaceAll('</script>','<\\/script>')}</script></body>`);
+fs.writeFileSync(path.join(docs,'offline.html'),html);
+fs.writeFileSync(path.join(docs,'.nojekyll'),'');
+console.log('Generated docs/offline.html');
