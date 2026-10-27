@@ -1,6 +1,7 @@
 // Geometry and asset invariants that protect the manufacturer handoff.
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
+import vm from 'node:vm';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {createCart} from '../docs/model.js';
@@ -35,5 +36,9 @@ model.explode(0);assert.deepEqual([...model.geometry().moved],[...model.geometry
 const spec=JSON.parse(fs.readFileSync(path.join(root,'docs/downloads/cart-specification.json'),'utf8'));
 assert.equal(spec.units,'mm');assert.equal(spec.openings.find(p=>p.id===9).width_x,254);assert.equal(spec.openings.find(p=>p.id===9).length_y,355.6);assert.equal(spec.operator_walnut_engraving.engraving_depth,null);assert.deepEqual(spec.removed_feature_ids,[3,4,5,7]);assert.equal(spec.openings.find(p=>p.id===9).bowl_depth,null);
 const html=fs.readFileSync(path.join(root,'docs/index.html'),'utf8');
+const offline=fs.readFileSync(path.join(root,'docs/offline.html'),'utf8');
+const bundle=offline.match(/<script type="module">([\s\S]*?)<\/script>/)?.[1];
+assert(bundle,'Offline viewer needs an embedded JavaScript bundle');
+new vm.Script(bundle,{filename:'offline-viewer.js'});
 for(const match of html.matchAll(/(?:src|href)="([^"#?]+)"/g)){const ref=match[1];if(ref.startsWith('http'))continue;assert(fs.existsSync(path.join(root,'docs',ref)),`Missing local asset: ${ref}`);}
 console.log(`PASS: ${vertices.length/8} vertices; 27 dimensioned components; attached cutouts and engraving; exact reassembly; isolated inspection; three-sided ledge; empty sink; six fitted views; local assets.`);

@@ -7,7 +7,8 @@ let html=fs.readFileSync(path.join(docs,'index.html'),'utf8');
 const css=fs.readFileSync(path.join(docs,'style.css'),'utf8');
 const logo='data:image/png;base64,'+fs.readFileSync(path.join(docs,'assets/studio-roast-logo-led-v2.png')).toString('base64');
 const js=['components.js','content.js','branding.js','model.js','inspection-ui.js','app.js'].map(name=>fs.readFileSync(path.join(docs,name),'utf8').replace(/^import .*?;\s*$/gm,'').replace(/^export /gm,'')).join('\n').replaceAll("'assets/studio-roast-logo-led-v2.png'",JSON.stringify(logo));
-html=html.replace('<link rel="stylesheet" href="style.css">',`<style>${css}</style>`).replace('<script type="module" src="app.js"></script>','').replace('</body>',`<script type="module">${js.replaceAll('</script>','<\\/script>')}</script></body>`);
+// Function replacements preserve literal dollar signs in JavaScript (including $$ selectors).
+html=html.replace('<link rel="stylesheet" href="style.css">',()=>`<style>${css}</style>`).replace('<script type="module" src="app.js"></script>','').replace('</body>',()=>`<script type="module">${js.replaceAll('</script>','<\\/script>')}</script></body>`);
 fs.writeFileSync(path.join(docs,'offline.html'),html);
 fs.writeFileSync(path.join(docs,'.nojekyll'),'');
 console.log('Generated docs/offline.html');
